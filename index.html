@@ -67,24 +67,3 @@
     <script type="module" src="index.js"></script>
 </body>
 </html>
-```
-
-**Resumen de los cambios clave en este HTML:**
-
-1.  **`<div id="app-container" ...>`**:
-    * Se **eliminó** `min-h-[500px]`.
-    * Se mantuvo `flex flex-col`. Eliminé `justify-between` aquí porque lo manejaremos internamente en cada pantalla para más control.
-
-2.  **Pantallas (`start-screen`, `game-screen`, `end-screen`):**
-    * A cada una de estas pantallas principales se les añadió `flex-grow flex flex-col`. Esto hace que la pantalla activa ocupe el espacio disponible dentro de `app-container`.
-    * Dentro de `start-screen` y `end-screen`, he añadido un `<div>` contenedor extra con `justify-center` (implícito por el `flex-grow` del padre y la estructura) para que el contenido de esas pantallas se centre verticalmente si es poco.
-    * En `game-screen`, `flex-grow flex flex-col` también está presente. El botón "Siguiente Pregunta" tiene `mt-auto` para empujarlo hacia abajo si hay espacio extra.
-
-3.  **`<div id="question-card" ...>`**:
-    * Se mantuvo `flex items-center justify-center` y `text-center` en el `<p>` interno para centrar el texto de la pregunta.
-    * Se añadió `flex-grow` para que la tarjeta de la pregunta pueda expandirse si es necesario, pero su contenido (el texto de la pregunta) determinará su altura natural. Quité el `min-h-[120px]` para ver cómo se comporta sin él; el padding `p-6` ya da un tamaño base.
-
-4.  **`<div id="feedback-container" ...>`**:
-    * Se mantuvo `min-h-[80px]` (puedes ajustarlo si es necesario) y se añadió `mb-4` para un poco de margen inferior antes del botón "Siguiente".
-
-Con estos ajustes, el `app-container` debería ser más flexible en su altura, y las pantallas internas usarán `flex-grow` para ocupar el espacio disponible, lo que debería resolver el problema del espacio en blanco excesi
