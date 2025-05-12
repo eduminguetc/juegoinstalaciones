@@ -1,0 +1,46 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Animación sutil para la aparición de elementos */
+.fade-in {
+    animation: fadeInEase 0.5s ease-out forwards;
+}
+
+@keyframes fadeInEase {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos para los botones de opción para feedback visual */
+.option-button.correct {
+    background-color: #22c55e !important; /* green-500 */
+    color: white !important;
+    border-color: #16a34a !important; /* green-600 */
+}
+
+.option-button.incorrect {
+    background-color: #ef4444 !important; /* red-500 */
+    color: white !important;
+    border-color: #dc2626 !important; /* red-600 */
+}
+
+.option-button.selected-incorrect {
+    background-color: #f87171 !important; /* red-400 */
+    color: white !important;
+    border-color: #ef4444 !important; /* red-500 */
+    opacity: 0.8 !important;
+}
+
+
+.option-button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
