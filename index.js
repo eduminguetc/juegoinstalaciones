@@ -130,7 +130,7 @@ function getRandomElements(arr, n, excludeIds = []) {
     let tempArr = [...availableItems];
 
     if (availableItems.length < n) {
-        tempArr = [...arr.filter(item => item && item.id)];
+        tempArr = [...arr.filter(item => item && item.id)]; 
     }
     
     const takeN = Math.min(n, tempArr.length);
@@ -165,8 +165,8 @@ function selectNewQuestions() {
         
         if (unitPicks.length < MIN_QUESTIONS_PER_UNIT) {
             const neededMore = MIN_QUESTIONS_PER_UNIT - unitPicks.length;
-            const remainingInUnit = questionsInUnit.filter(q => q && q.id && !unitPicks.find(up => up.id === q.id));
-            unitPicks = [...unitPicks, ...getRandomElements(remainingInUnit, neededMore)];
+            const remainingInUnitForThisSelection = questionsInUnit.filter(q => q && q.id && !unitPicks.find(up => up.id === q.id));
+            unitPicks = [...unitPicks, ...getRandomElements(remainingInUnitForThisSelection, neededMore)]; 
         }
         
         unitPicks.forEach(q => {
@@ -178,7 +178,7 @@ function selectNewQuestions() {
     }
     console.log(`[TRIVIA-DEBUG] selectNewQuestions: Preguntas tras garantía de unidad (${selectedQuestions.length}):`, selectedQuestions.map(q=>q.id));
 
-    const remainingNeeded = TOTAL_QUESTIONS_PER_GAME - selectedQuestions.length;
+    let remainingNeeded = TOTAL_QUESTIONS_PER_GAME - selectedQuestions.length;
     if (remainingNeeded > 0) {
         let availablePool = allQuestions.filter(q => q && q.id && !selectedIds.has(q.id));
         let preferredPool = availablePool.filter(q => !lastGameQuestionIds.includes(q.id));
@@ -187,32 +187,25 @@ function selectNewQuestions() {
             selectedQuestions = [...selectedQuestions, ...getRandomElements(preferredPool, remainingNeeded)];
         } else {
             selectedQuestions = [...selectedQuestions, ...preferredPool];
-            const neededFromPlayed = remainingNeeded - preferredPool.length;
-            if (neededFromPlayed > 0) {
+            remainingNeeded -= preferredPool.length;
+
+            if (remainingNeeded > 0) {
                  let fallbackPool = availablePool.filter(q => q && q.id && !preferredPool.find(pp => pp.id === q.id));
-                 selectedQuestions = [...selectedQuestions, ...getRandomElements(fallbackPool, neededFromPlayed)];
+                 selectedQuestions = [...selectedQuestions, ...getRandomElements(fallbackPool, remainingNeeded)];
             }
         }
     }
     console.log(`[TRIVIA-DEBUG] selectNewQuestions: Preguntas tras relleno aleatorio (${selectedQuestions.length}):`, selectedQuestions.map(q=>q.id));
     
-    const minTotalForGame = Math.min(TOTAL_QUESTIONS_PER_GAME, MIN_QUESTIONS_PER_UNIT * TOTAL_UNITS);
+    const minTotalForGame = MIN_QUESTIONS_PER_UNIT * TOTAL_UNITS;
 
-    if (selectedQuestions.length < minTotalForGame) {
-        let unitsFullyRepresented = 0;
-        for (let i = 1; i <= TOTAL_UNITS; i++) {
-            const unitQs = selectedQuestions.filter(q => q.unit === i);
-            const totalUnitQsAvailable = (groupedByUnit[i] || []).length;
-            if (unitQs.length >= Math.min(MIN_QUESTIONS_PER_UNIT, totalUnitQsAvailable) && totalUnitQsAvailable > 0) {
-                unitsFullyRepresented++;
-            }
-        }
-        if (unitsFullyRepresented < TOTAL_UNITS && selectedQuestions.length < minTotalForGame) {
-             console.error(`[TRIVIA-DEBUG] selectNewQuestions: Insuficientes preguntas. Seleccionadas: ${selectedQuestions.length}, Mínimo requerido: ${minTotalForGame}. Unidades representadas adecuadamente: ${unitsFullyRepresented}/${TOTAL_UNITS}`);
-            if (errorMessageElem) errorMessageElem.textContent = "No hay suficientes preguntas distintas para iniciar una partida que cumpla los criterios de variedad. Por favor, añade más preguntas.";
+    if (selectedQuestions.length < TOTAL_QUESTIONS_PER_GAME) {
+        console.warn(`[TRIVIA-DEBUG] selectNewQuestions: Se seleccionaron ${selectedQuestions.length} preguntas, menos de las ${TOTAL_QUESTIONS_PER_GAME} deseadas.`);
+        if (selectedQuestions.length < minTotalForGame && selectedQuestions.length < 20) {
+            console.error(`[TRIVIA-DEBUG] selectNewQuestions: Insuficientes preguntas para un juego viable. Seleccionadas: ${selectedQuestions.length}, Mínimo requerido (aprox): ${minTotalForGame}`);
+            if (errorMessageElem) errorMessageElem.textContent = "No hay suficientes preguntas distintas para iniciar una partida. Por favor, añade más preguntas al banco.";
             return null;
         }
-         console.warn(`[TRIVIA-DEBUG] selectNewQuestions: El juego comenzará con ${selectedQuestions.length} preguntas, menos de las ${TOTAL_QUESTIONS_PER_GAME} deseadas, pero cumpliendo mínimos de unidad si es posible.`);
     }
 
     for (let i = selectedQuestions.length - 1; i > 0; i--) {
@@ -220,8 +213,8 @@ function selectNewQuestions() {
         [selectedQuestions[i], selectedQuestions[j]] = [selectedQuestions[j], selectedQuestions[i]];
     }
     
-    lastGameQuestionIds = selectedQuestions.map(q => q.id);
-    console.log("[TRIVIA-DEBUG] selectNewQuestions: Preguntas finales seleccionadas y mezcladas:", selectedQuestions.map(q=>q.id));
+    lastGameQuestionIds = selectedQuestions.slice(0, TOTAL_QUESTIONS_PER_GAME).map(q => q.id);
+    console.log("[TRIVIA-DEBUG] selectNewQuestions: Preguntas finales seleccionadas y mezcladas:", lastGameQuestionIds);
     return selectedQuestions.slice(0, TOTAL_QUESTIONS_PER_GAME);
 }
 
@@ -229,16 +222,16 @@ function selectNewQuestions() {
  * Muestra la pregunta actual y sus opciones.
  */
 function displayQuestion() {
-    console.log(`[TRIVIA-DEBUG] displayQuestion: Mostrando pregunta ${currentQuestionIndex + 1}`);
+    console.log(`[TRIVIA-DEBUG] displayQuestion: Mostrando pregunta ${currentQuestionIndex + 1} de ${currentQuestions.length}`);
     if (currentQuestionIndex >= currentQuestions.length) {
         endGame();
         return;
     }
 
     const question = currentQuestions[currentQuestionIndex];
-    if (!question || !question.options) {
+    if (!question || !question.options || !Array.isArray(question.options)) {
         console.error("[TRIVIA-DEBUG] displayQuestion: Pregunta inválida o sin opciones:", question);
-        if(errorMessageElem) errorMessageElem.textContent = "Error al mostrar la pregunta.";
+        if(errorMessageElem) errorMessageElem.textContent = "Error al mostrar la pregunta. Datos corruptos.";
         endGame();
         return;
     }
@@ -248,7 +241,7 @@ function displayQuestion() {
     question.options.forEach((option, index) => {
         const button = document.createElement('button');
         button.textContent = option;
-        button.classList.add('option-button', 'w-full', 'bg-slate-100', 'hover:bg-slate-200', 'text-slate-700', 'font-medium', 'py-3', 'px-4', 'rounded-lg', 'border', 'border-slate-300', 'transition-all', 'duration-150', 'ease-in-out', 'text-left', 'sm:text-base', 'text-sm');
+        button.className = 'option-button w-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium py-3 px-4 rounded-lg border border-slate-300 transition-all duration-150 ease-in-out text-left sm:text-base text-sm';
         button.dataset.index = index;
         button.addEventListener('click', handleOptionClick);
         optionsContainer.appendChild(button);
@@ -273,50 +266,51 @@ function displayQuestion() {
 function handleOptionClick(event) {
     const selectedButton = event.target;
     const selectedAnswerIndex = parseInt(selectedButton.dataset.index);
-    const correctAnswerIndex = currentQuestions[currentQuestionIndex].correctAnswerIndex;
+    const currentQuestion = currentQuestions[currentQuestionIndex];
+    const correctAnswerIndex = currentQuestion.correctAnswerIndex;
 
     const optionButtons = optionsContainer.querySelectorAll('.option-button');
-    optionButtons.forEach(btn => btn.disabled = true);
+    optionButtons.forEach(btn => {
+        btn.disabled = true;
+        btn.classList.remove('hover:bg-slate-200');
+    });
+
+    explanationTextElem.textContent = `Explicación: ${currentQuestion.explanation}`;
+    explanationTextElem.classList.remove('hidden');
 
     if (selectedAnswerIndex === correctAnswerIndex) {
         score++;
-        selectedButton.classList.remove('bg-slate-100', 'hover:bg-slate-200', 'border-slate-300');
+        selectedButton.classList.remove('bg-slate-100', 'border-slate-300');
         selectedButton.classList.add('correct');
         feedbackTextElem.textContent = '¡Respuesta Correcta!';
-        feedbackTextElem.classList.add('bg-green-100', 'text-green-700');
+        feedbackTextElem.className = 'text-center font-medium p-3 rounded-md bg-green-100 text-green-700';
         console.log("[TRIVIA-DEBUG] handleOptionClick: Respuesta correcta.");
-        setTimeout(() => {
-            currentQuestionIndex++;
-            displayQuestion();
-        }, 1500);
     } else {
         mistakes++;
-        selectedButton.classList.remove('bg-slate-100', 'hover:bg-slate-200', 'border-slate-300');
+        selectedButton.classList.remove('bg-slate-100', 'border-slate-300');
         selectedButton.classList.add('selected-incorrect');
         
         if (optionButtons[correctAnswerIndex]) {
-            optionButtons[correctAnswerIndex].classList.remove('bg-slate-100', 'hover:bg-slate-200', 'border-slate-300');
+            optionButtons[correctAnswerIndex].classList.remove('bg-slate-100', 'border-slate-300');
             optionButtons[correctAnswerIndex].classList.add('correct');
         } else {
             console.error("[TRIVIA-DEBUG] handleOptionClick: Índice de respuesta correcta inválido:", correctAnswerIndex);
         }
         
         feedbackTextElem.textContent = 'Respuesta Incorrecta.';
-        feedbackTextElem.classList.add('bg-red-100', 'text-red-700');
-        explanationTextElem.textContent = `Explicación: ${currentQuestions[currentQuestionIndex].explanation}`;
-        explanationTextElem.classList.remove('hidden');
-        nextQuestionBtn.classList.remove('hidden');
+        feedbackTextElem.className = 'text-center font-medium p-3 rounded-md bg-red-100 text-red-700';
         console.log("[TRIVIA-DEBUG] handleOptionClick: Respuesta incorrecta.");
     }
     updateCounters();
+    nextQuestionBtn.classList.remove('hidden'); // Mostrar siempre el botón "Siguiente Pregunta"
 }
 
 /**
  * Actualiza los contadores de pregunta y puntuación.
  */
 function updateCounters() {
-    if (questionCounter && scoreCounter) {
-        questionCounter.textContent = `Pregunta ${currentQuestionIndex + 1} / ${currentQuestions.length}`;
+    if (questionCounter && scoreCounter && currentQuestions.length > 0) {
+        questionCounter.textContent = `Pregunta ${Math.min(currentQuestionIndex + 1, currentQuestions.length)} / ${currentQuestions.length}`;
         scoreCounter.textContent = `Aciertos: ${score} | Fallos: ${mistakes}`;
     }
 }
@@ -335,7 +329,6 @@ function startGame() {
         if(startScreen) startScreen.classList.remove('hidden');
         if(gameScreen) gameScreen.classList.add('hidden');
         if(endScreen) endScreen.classList.add('hidden');
-        // El mensaje de error ya debería estar puesto por selectNewQuestions
         return;
     }
     
@@ -405,15 +398,10 @@ function initializeApp() {
 }
 
 // --- Event Listener para iniciar la app ---
-// Asegurarse de que el script se ejecuta después de que el DOM esté listo.
-// Si el script está al final del body, esto es implícito.
-// Si está en el head, se necesita DOMContentLoaded.
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initializeApp);
 } else {
-    // El DOM ya está listo
     initializeApp();
 }
 
-// No debe haber ningún 'return' fuera de una función a este nivel del script.
-console.log("[TRIVIA-DEBUG] index.js: Script cargado y parseado completamente.");
+console.log("[TRIVIA-DEBUG] index.js: Script cargado y parseado completamente (versión con feedback modificado).");
