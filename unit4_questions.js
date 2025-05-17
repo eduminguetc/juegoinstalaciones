@@ -1,36 +1,36 @@
 // unit4_questions.js
-// Preguntas basadas en el resumen de la Unidad 4: Configuración de instalaciones de electricidad y telecomunicaciones
+// Preguntas basadas en el resumen de la Unidad 4: Configuración de instalaciones de electricidad y telecomunicaciones (Opciones Revisadas)
 export const unit4Questions = [
   {
     id: 'u4q1',
     unit: 4,
     questionText: '¿Qué es la "tensión" eléctrica?',
     options: [
-      'La cantidad de electrones que fluyen por un conductor.',
-      'La energía eléctrica consumida por unidad de tiempo.',
-      'La diferencia de potencial eléctrico entre dos puntos, necesaria para que fluya la corriente.',
-      'La oposición al paso de la corriente eléctrica.'
+      'Flujo de electrones',
+      'Energía por tiempo',
+      'Diferencia de potencial',
+      'Oposición a la corriente'
     ],
     correctAnswerIndex: 2,
-    explanation: 'La tensión es la diferencia de potencial que se produce entre dos puntos de un mismo circuito, necesaria para que circulen las cargas eléctricas. Se mide en Voltios (V).'
+    explanation: 'La tensión es la diferencia de potencial eléctrico entre dos puntos, necesaria para que fluya la corriente. Se mide en Voltios (V).'
   },
   {
     id: 'u4q2',
     unit: 4,
-    questionText: '¿Cuál es la principal diferencia entre corriente monofásica y trifásica?',
+    questionText: 'Diferencia principal: corriente monofásica vs. trifásica:',
     options: [
-      'La monofásica es solo para alta tensión y la trifásica para baja tensión.',
-      'El número de fases que componen la línea (una fase vs. tres fases).',
-      'La monofásica no utiliza conductor neutro.',
-      'La trifásica solo se usa para iluminación.'
+      'Monofásica solo AT',
+      'Número de fases',
+      'Monofásica sin neutro',
+      'Trifásica solo para luz'
     ],
     correctAnswerIndex: 1,
-    explanation: 'La diferencia entre la corriente monofásica y trifásica se refiere al número de fases que componen la línea. Los sistemas monofásicos se componen de una fase (y neutro) y los trifásicos de 3 fases (y neutro) desfasadas 120º entre sí.'
+    explanation: 'La diferencia principal es el número de fases: monofásica tiene una fase (y neutro), trifásica tiene tres fases (y neutro) desfasadas 120º.'
   },
   {
     id: 'u4q3',
     unit: 4,
-    questionText: 'En España, la tensión de suministro habitual en viviendas (Baja Tensión monofásica) es de:',
+    questionText: 'Tensión de suministro monofásica habitual en viviendas (España):',
     options: [
       '110 V',
       '230 V',
@@ -38,51 +38,51 @@ export const unit4Questions = [
       '1000 V'
     ],
     correctAnswerIndex: 1,
-    explanation: 'La Baja Tensión es la que llega a los usuarios, siendo en España 230V para monofásica y 400V entre fases para trifásica.'
+    explanation: 'La Baja Tensión es la que llega a los usuarios, siendo en España 230V para monofásica.'
   },
   {
     id: 'u4q4',
     unit: 4,
-    questionText: '¿Cuál es la función principal del Reglamento Electrotécnico para Baja Tensión (REBT)?',
+    questionText: 'Función principal del REBT (Reglamento Electrotécnico Baja Tensión):',
     options: [
-      'Regular las instalaciones de alta tensión.',
-      'Establecer las tarifas eléctricas.',
-      'Fijar las condiciones técnicas y garantías para las instalaciones eléctricas en BT, protegiendo personas y bienes.',
-      'Definir los colores de los electrodomésticos.'
+      'Regular alta tensión',
+      'Establecer tarifas',
+      'Fijar condiciones BT',
+      'Definir color aparatos'
     ],
     correctAnswerIndex: 2,
-    explanation: 'El REBT establece las condiciones técnicas y garantías que deben reunir las instalaciones eléctricas conectadas a una fuente de suministro en los límites de baja tensión, con la finalidad de proteger la seguridad de las personas y los bienes, y asegurar el normal funcionamiento.'
+    explanation: 'El REBT establece las condiciones técnicas y garantías para las instalaciones eléctricas en BT, protegiendo personas y bienes.'
   },
   {
     id: 'u4q5',
     unit: 4,
-    questionText: 'La "instalación de enlace" en un edificio incluye desde la red de distribución pública hasta:',
+    questionText: 'La "instalación de enlace" eléctrica va desde la red pública hasta:',
     options: [
-      'El interruptor de cada lámpara.',
-      'La toma de corriente de la cocina.',
-      'El Interruptor de Control de Potencia (ICP) dentro de la vivienda del usuario.',
-      'El transformador del barrio.'
+      'Interruptor de lámpara',
+      'Enchufe de cocina',
+      'ICP de la vivienda',
+      'Transformador barrio'
     ],
     correctAnswerIndex: 2,
-    explanation: 'La instalación de enlace es el recorrido de la electricidad desde la red de distribución pública hasta la vivienda del usuario, finalizando en el Interruptor de Control de Potencia (ICP) o en los dispositivos generales de mando y protección de la vivienda.'
+    explanation: 'La instalación de enlace es el recorrido de la electricidad desde la red pública hasta el Interruptor de Control de Potencia (ICP) dentro de la vivienda.'
   },
   {
     id: 'u4q6',
     unit: 4,
-    questionText: '¿Qué elemento de la instalación de enlace contiene los fusibles de protección de la línea repartidora?',
+    questionText: '¿Qué elemento contiene los fusibles de protección de la línea repartidora?',
     options: [
-      'La centralización de contadores.',
-      'La Derivación Individual.',
-      'La Caja General de Protección (CGP).',
-      'El Interruptor de Control de Potencia (ICP).'
+      'Centralización contadores',
+      'Derivación Individual',
+      'Caja General Protección (CGP)',
+      'Interruptor Control Potencia (ICP)'
     ],
     correctAnswerIndex: 2,
-    explanation: 'La Caja General de Protección (CGP) contiene los elementos de protección (fusibles) que protegen la línea repartidora (o LGA) que ingresa al edificio.'
+    explanation: 'La Caja General de Protección (CGP) contiene los fusibles que protegen la línea repartidora (o LGA) que ingresa al edificio.'
   },
   {
     id: 'u4q7',
     unit: 4,
-    questionText: 'El Grado de Electrificación Básico para una vivienda prevé una potencia mínima de:',
+    questionText: 'Potencia mínima prevista para Grado de Electrificación Básico:',
     options: [
       '3.450 W',
       '5.750 W',
@@ -90,12 +90,12 @@ export const unit4Questions = [
       '12.500 W'
     ],
     correctAnswerIndex: 1,
-    explanation: 'El Grado de Electrificación Básico plantea una potencia mínima a contratar de 5.750 W (a 230V) y debe disponer de al menos 5 circuitos independientes.'
+    explanation: 'El Grado de Electrificación Básico plantea una potencia mínima a contratar de 5.750 W (a 230V).'
   },
   {
     id: 'u4q8',
     unit: 4,
-    questionText: '¿Cuál es el color normalizado para el conductor Neutro en una instalación monofásica en España?',
+    questionText: 'Color normalizado para el conductor Neutro en España:',
     options: [
       'Marrón',
       'Negro',
@@ -108,25 +108,25 @@ export const unit4Questions = [
   {
     id: 'u4q9',
     unit: 4,
-    questionText: 'Un interruptor automático magnetotérmico (PIA) protege un circuito contra:',
+    questionText: 'Un interruptor magnetotérmico (PIA) protege contra:',
     options: [
-      'Fugas de corriente a tierra exclusivamente.',
-      'Sobrecargas y cortocircuitos.',
-      'Subidas de tensión de la red.',
-      'Fallo del conductor de tierra.'
+      'Solo fugas a tierra',
+      'Sobrecargas y cortocircuitos',
+      'Subidas de tensión',
+      'Fallo de tierra'
     ],
     correctAnswerIndex: 1,
-    explanation: 'Los interruptores automáticos magnetotérmicos (PIA) protegen los circuitos eléctricos contra sobrecargas (parte térmica) y cortocircuitos (parte magnética).'
+    explanation: 'Los interruptores automáticos magnetotérmicos (PIA) protegen los circuitos contra sobrecargas (térmica) y cortocircuitos (magnética).'
   },
   {
     id: 'u4q10',
     unit: 4,
-    questionText: '¿Cuál es la sensibilidad típica de un interruptor diferencial para la protección de personas en viviendas?',
+    questionText: 'Sensibilidad típica de un interruptor diferencial en viviendas:',
     options: [
-      '10 Amperios (A)',
-      '300 Miliamperios (mA)',
-      '30 Miliamperios (mA)',
-      '3 Amperios (A)'
+      '10 Amperios',
+      '300 Miliamperios',
+      '30 Miliamperios',
+      '3 Amperios'
     ],
     correctAnswerIndex: 2,
     explanation: 'Para la protección de personas en viviendas, la sensibilidad de los interruptores diferenciales suele ser alta, de 30 mA (0.03 A).'
@@ -134,116 +134,116 @@ export const unit4Questions = [
   {
     id: 'u4q11',
     unit: 4,
-    questionText: 'Un conmutador se utiliza para:',
+    questionText: 'Un conmutador se utiliza para controlar una luz desde:',
     options: [
-      'Regular la intensidad de una luz.',
-      'Controlar un punto de luz desde un solo sitio.',
-      'Controlar un punto de luz desde dos sitios diferentes.',
-      'Proteger el circuito de iluminación contra cortocircuitos.'
+      'Un solo sitio',
+      'Dos sitios diferentes',
+      'Tres o más sitios',
+      'De forma remota'
     ],
-    correctAnswerIndex: 2,
-    explanation: 'Los conmutadores se utilizan en instalaciones donde se quiere controlar un punto de luz (encendido/apagado) desde dos lugares distintos (ej. extremos de un pasillo).'
+    correctAnswerIndex: 1,
+    explanation: 'Los conmutadores se utilizan para controlar un punto de luz (encendido/apagado) desde dos lugares distintos.'
   },
   {
     id: 'u4q12',
     unit: 4,
-    questionText: 'La función principal de la "red de tierra" en una instalación eléctrica es:',
+    questionText: 'Función principal de la "red de tierra" eléctrica:',
     options: [
-      'Aumentar la potencia disponible.',
-      'Reducir el consumo eléctrico.',
-      'Limitar la tensión de las masas metálicas respecto a tierra en caso de fallo, protegiendo a las personas.',
-      'Servir como conductor de retorno para la corriente.'
+      'Aumentar potencia',
+      'Reducir consumo',
+      'Protección de personas',
+      'Retorno de corriente'
     ],
     correctAnswerIndex: 2,
-    explanation: 'La puesta a tierra limita la tensión que, con respecto a tierra, pueden tener las masas metálicas en ciertos momentos (fallos de aislamiento), derivando la corriente de defecto y haciendo actuar al diferencial para proteger a las personas.'
+    explanation: 'La puesta a tierra limita la tensión de las masas metálicas respecto a tierra en caso de fallo, protegiendo a las personas al derivar la corriente de defecto.'
   },
   {
     id: 'u4q13',
     unit: 4,
-    questionText: '¿Qué tipo de lámpara funciona calentando un filamento hasta que emite luz visible, siendo poco eficiente energéticamente?',
+    questionText: 'Lámpara poco eficiente que calienta un filamento:',
     options: [
-      'Lámpara LED',
-      'Lámpara fluorescente',
-      'Lámpara de incandescencia',
-      'Lámpara de vapor de sodio'
+      'LED',
+      'Fluorescente',
+      'Incandescente',
+      'Vapor de sodio'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Las lámparas de incandescencia funcionan calentando un filamento conductor fino hasta que emite luz. Su eficiencia es baja ya que gran parte de la energía se pierde como calor.'
+    explanation: 'Las lámparas de incandescencia funcionan calentando un filamento hasta que emite luz, siendo poco eficientes energéticamente.'
   },
   {
     id: 'u4q14',
     unit: 4,
-    questionText: 'Una "luminaria" es:',
+    questionText: 'Una "luminaria" es el conjunto que incluye:',
     options: [
-      'Solo la bombilla o fuente de luz.',
-      'El interruptor que enciende la luz.',
-      'El conjunto de elementos que soporta, protege y distribuye la luz emitida por una o más lámparas.',
-      'El cableado de la instalación de alumbrado.'
+      'Solo la bombilla',
+      'El interruptor',
+      'Lámpara, soporte y óptica',
+      'El cableado'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Una luminaria es el conjunto de elementos destinados a repartir, filtrar o transformar la luz emitida por una o más lámparas, englobando dispositivos de soporte, fijación y protección.'
+    explanation: 'Una luminaria es el conjunto de elementos que soporta, protege y distribuye la luz emitida por una o más lámparas (incluye óptica como reflector/difusor).'
   },
   {
     id: 'u4q15',
     unit: 4,
-    questionText: 'El alumbrado exterior vial funcional (Clases A, B) se refiere principalmente a:',
+    questionText: 'Alumbrado exterior vial funcional (Clases A, B) es para:',
     options: [
-      'Iluminación de parques y jardines.',
-      'Iluminación de autopistas, autovías y vías urbanas para seguridad del tráfico.',
-      'Iluminación decorativa de fachadas.',
-      'Alumbrado de emergencia en túneles.'
+      'Parques y jardines',
+      'Seguridad del tráfico',
+      'Decoración fachadas',
+      'Emergencia túneles'
     ],
     correctAnswerIndex: 1,
-    explanation: 'El alumbrado vial funcional corresponde al alumbrado de autopistas, autovías, carreteras y vías urbanas, donde la velocidad del tráfico es un factor clave (Clases A y B).'
+    explanation: 'El alumbrado vial funcional (Clases A y B) corresponde al alumbrado de autopistas, autovías y vías urbanas, donde la seguridad del tráfico es clave.'
   },
   {
     id: 'u4q16',
     unit: 4,
-    questionText: '¿Cuál es uno de los objetivos del "alumbrado de seguridad" en zonas como polígonos industriales?',
+    questionText: 'Objetivo del "alumbrado de seguridad" en polígonos:',
     options: [
-      'Mejorar la estética de la zona.',
-      'Reducir el consumo energético al mínimo.',
-      'Vigilancia y reducción de la inseguridad.',
-      'Facilitar el tráfico de vehículos pesados.'
+      'Mejorar estética',
+      'Reducir consumo',
+      'Vigilancia y seguridad',
+      'Facilitar tráfico'
     ],
     correctAnswerIndex: 2,
-    explanation: 'El alumbrado de seguridad se instala en zonas alejadas con un objetivo de vigilancia, buscando reducir la inseguridad.'
+    explanation: 'El alumbrado de seguridad en zonas como polígonos industriales tiene un objetivo de vigilancia y reducción de la inseguridad.'
   },
   {
     id: 'u4q17',
     unit: 4,
-    questionText: 'La "Infraestructura Común de Telecomunicaciones" (ICT) de un edificio NO tiene como función principal:',
+    questionText: '¿Cuál NO es función principal de una ICT?',
     options: [
-      'Captar y adaptar señales de radiodifusión sonora y televisión.',
-      'Proporcionar acceso al servicio de telefonía.',
-      'Generar energía eléctrica para los equipos de telecomunicaciones.',
-      'Permitir la conexión a servicios de telecomunicaciones de banda ancha.'
+      'Captar señales RTV',
+      'Acceso a telefonía',
+      'Generar energía eléctrica',
+      'Conexión a banda ancha'
     ],
     correctAnswerIndex: 2,
-    explanation: 'La ICT facilita el acceso a servicios de telecomunicaciones (RTV, telefonía, banda ancha), pero no genera la energía eléctrica que estos necesitan (aunque sí prevé su alimentación desde la red eléctrica del edificio).'
+    explanation: 'La ICT facilita el acceso a servicios de telecomunicaciones, pero no genera la energía eléctrica que estos necesitan.'
   },
   {
     id: 'u4q18',
     unit: 4,
-    questionText: 'El Recinto de Instalaciones de Telecomunicación Inferior (RITI) se encuentra generalmente en:',
+    questionText: 'El Recinto de Instalaciones de Telecomunicación Inferior (RITI) se ubica:',
     options: [
-      'La cubierta del edificio, junto a las antenas.',
-      'La parte baja del edificio, alojando registros principales de operadores.',
-      'El interior de cada vivienda.',
-      'Un local técnico en plantas intermedias.'
+      'En la cubierta',
+      'Parte baja del edificio',
+      'Interior de viviendas',
+      'Plantas intermedias'
     ],
     correctAnswerIndex: 1,
-    explanation: 'El RITI se encuentra en la parte baja del edificio y contiene, entre otras cosas, los registros principales de los operadores de telefonía y telecomunicaciones de banda ancha.'
+    explanation: 'El RITI se encuentra generalmente en la parte baja del edificio y aloja los registros principales de los operadores de telefonía y banda ancha.'
   },
   {
     id: 'u4q19',
     unit: 4,
-    questionText: '¿Qué tipo de antena es comúnmente empleada en las instalaciones de televisión terrestre?',
+    questionText: 'Antena comúnmente empleada para televisión terrestre (TDT):',
     options: [
-      'Antena de dipolo simple',
+      'Dipolo simple',
       'Antena Yagi',
-      'Antena parabólica',
-      'Antena de cuadro'
+      'Parabólica',
+      'De cuadro'
     ],
     correctAnswerIndex: 1,
     explanation: 'La antena Yagi es un tipo de antena direccional muy empleada para la recepción de señales de televisión terrestre (TDT).'
@@ -251,33 +251,33 @@ export const unit4Questions = [
   {
     id: 'u4q20',
     unit: 4,
-    questionText: 'El "Punto de Terminación de Red" (PTR) en una instalación telefónica fija:',
+    questionText: 'El "Punto de Terminación de Red" (PTR) en telefonía fija:',
     options: [
-      'Es el teléfono principal de la vivienda.',
-      'Es un amplificador de señal instalado por el usuario.',
-      'Es un cuadro que separa la red interna del abonado del cable exterior del operador.',
-      'Es la centralita telefónica del edificio.'
+      'Teléfono principal',
+      'Amplificador de señal',
+      'Separa red abonado/operador',
+      'Centralita del edificio'
     ],
     correctAnswerIndex: 2,
-    explanation: 'El PTR es un dispositivo (cajetín) ubicado en el domicilio del abonado que separa la red interna del mismo y el cable exterior, considerándose parte de la red del operador.'
+    explanation: 'El PTR es un dispositivo que separa la red interna del abonado del cable exterior del operador, considerándose parte de la red del operador.'
   },
   {
     id: 'u4q21',
     unit: 4,
-    questionText: '¿Qué es el "coeficiente de simultaneidad" en instalaciones eléctricas?',
+    questionText: 'El "coeficiente de simultaneidad" eléctrico relaciona potencia máxima con:',
     options: [
-      'La máxima caída de tensión permitida.',
-      'Un factor que relaciona la potencia máxima que puede entregar una instalación con la suma de potencias nominales de los receptores.',
-      'El tiempo que pueden funcionar los aparatos a la vez.',
-      'La eficiencia de los transformadores.'
+      'Caída de tensión',
+      'Suma potencias nominales',
+      'Tiempo de funcionamiento',
+      'Eficiencia transformador'
     ],
     correctAnswerIndex: 1,
-    explanation: 'El coeficiente de simultaneidad es el cociente entre la potencia eléctrica máxima que puede entregar una instalación y la suma de las potencias nominales de todos los receptores que pueden conectarse a ella.'
+    explanation: 'El coeficiente de simultaneidad relaciona la potencia máxima que puede entregar una instalación con la suma de potencias nominales de los receptores.'
   },
   {
     id: 'u4q22',
     unit: 4,
-    questionText: '¿Cuál es la tensión límite superior para ser considerada "Baja Tensión" en corriente alterna según el REBT?',
+    questionText: 'Límite superior de "Baja Tensión" en CA según REBT:',
     options: [
       '230 V',
       '400 V',
@@ -290,25 +290,25 @@ export const unit4Questions = [
   {
     id: 'u4q23',
     unit: 4,
-    questionText: 'La "Línea Repartidora" o "Línea General de Alimentación" (LGA) conecta:',
+    questionText: 'La "Línea General de Alimentación" (LGA) conecta:',
     options: [
-      'El contador con el cuadro de la vivienda.',
-      'La CGP con la centralización de contadores.',
-      'La red de distribución pública con la CGP.',
-      'Los diferentes circuitos dentro de la vivienda.'
+      'Contador a cuadro vivienda',
+      'CGP a centralización contadores',
+      'Red pública a CGP',
+      'Circuitos en vivienda'
     ],
     correctAnswerIndex: 1,
-    explanation: 'La Línea Repartidora (o LGA) conecta la Caja General de Protección (CGP) con el cuarto destinado a contener la centralización de contadores.'
+    explanation: 'La Línea General de Alimentación (LGA) o línea repartidora conecta la Caja General de Protección (CGP) con la centralización de contadores.'
   },
   {
     id: 'u4q24',
     unit: 4,
-    questionText: 'En el Grado de Electrificación Básico, ¿cuál es el circuito C3?',
+    questionText: 'En Grado Electrificación Básico, el circuito C3 es para:',
     options: [
-      'Iluminación.',
-      'Tomas de corriente de uso general.',
-      'Cocina y horno.',
-      'Lavadora, lavavajillas y termo.'
+      'Iluminación',
+      'Tomas uso general',
+      'Cocina y horno',
+      'Lavadora y termo'
     ],
     correctAnswerIndex: 2,
     explanation: 'En el Grado de Electrificación Básico, el circuito C3 está destinado a alimentar la cocina y el horno.'
@@ -316,181 +316,181 @@ export const unit4Questions = [
   {
     id: 'u4q25',
     unit: 4,
-    questionText: 'La "Intensidad Máxima Admisible" (Imax) de un conductor depende principalmente de:',
+    questionText: '"Intensidad Máxima Admisible" (Imax) de un conductor depende de:',
     options: [
-      'Su color de aislamiento.',
-      'Su longitud.',
-      'Su sección y material.',
-      'El tipo de canalización.'
+      'Color aislamiento',
+      'Longitud',
+      'Sección y material',
+      'Tipo canalización'
     ],
     correctAnswerIndex: 2,
-    explanation: 'La Intensidad Máxima Admisible (Imax) de un conductor, es decir, la corriente que soporta sin sobrecalentarse peligrosamente, depende fundamentalmente de su sección y del material conductor.'
+    explanation: 'La Intensidad Máxima Admisible (Imax) de un conductor depende fundamentalmente de su sección y del material conductor.'
   },
   {
     id: 'u4q26',
     unit: 4,
-    questionText: '¿Qué tipo de canalización se utiliza comúnmente para proteger los conductores eléctricos empotrados en paredes?',
+    questionText: 'Canalización común para conductores eléctricos empotrados:',
     options: [
-      'Bandejas metálicas perforadas.',
-      'Tubos protectores (rígidos o flexibles).',
-      'Canales de obra de fábrica abiertos.',
-      'Cables armados sin protección adicional.'
+      'Bandejas perforadas',
+      'Tubos protectores',
+      'Canales abiertos',
+      'Cables armados solos'
     ],
     correctAnswerIndex: 1,
-    explanation: 'Para instalaciones empotradas, se utilizan tubos protectores, que pueden ser rígidos, curvables o flexibles, para alojar y proteger los conductores.'
+    explanation: 'Para instalaciones empotradas, se utilizan tubos protectores (rígidos o flexibles) para alojar y proteger los conductores.'
   },
   {
     id: 'u4q27',
     unit: 4,
-    questionText: 'Un "conmutador de cruce" se utiliza en una instalación de alumbrado para:',
+    questionText: 'Un "conmutador de cruce" sirve para controlar una luz desde:',
     options: [
-      'Regular la intensidad de la luz.',
-      'Controlar un punto de luz desde un solo lugar.',
-      'Controlar un punto de luz desde dos lugares.',
-      'Controlar un punto de luz desde tres o más lugares (intercalado entre conmutadores).'
+      'Regular intensidad',
+      'Un solo lugar',
+      'Dos lugares',
+      'Tres o más lugares'
     ],
     correctAnswerIndex: 3,
-    explanation: 'El conmutador de cruce (o cruzamiento) se intercala entre dos conmutadores para permitir el control de un mismo punto de luz desde tres o más ubicaciones diferentes.'
+    explanation: 'El conmutador de cruce (o cruzamiento) se intercala entre dos conmutadores para permitir el control de un mismo punto de luz desde tres o más ubicaciones.'
   },
   {
     id: 'u4q28',
     unit: 4,
-    questionText: '¿Cuál es el propósito de un "electrodo" en una instalación de puesta a tierra?',
+    questionText: 'Propósito de un "electrodo" en una puesta a tierra:',
     options: [
-      'Conectar los cables de fase y neutro.',
-      'Ser una masa metálica en buen contacto con el terreno para facilitar el paso de corrientes de defecto.',
-      'Aislar la instalación eléctrica del suelo.',
-      'Medir la resistividad del terreno.'
+      'Conectar fase y neutro',
+      'Disipar corriente a tierra',
+      'Aislar del suelo',
+      'Medir resistividad'
     ],
     correctAnswerIndex: 1,
-    explanation: 'El electrodo es una masa metálica (pica, placa, etc.) permanentemente en buen contacto con el terreno, que facilita el paso de las corrientes de defecto o la carga eléctrica hacia tierra.'
+    explanation: 'El electrodo es una masa metálica en buen contacto con el terreno, que facilita el paso de las corrientes de defecto o la carga eléctrica hacia tierra.'
   },
   {
     id: 'u4q29',
     unit: 4,
-    questionText: 'Las lámparas fluorescentes compactas (CFL) fueron diseñadas principalmente para:',
+    questionText: 'Lámparas fluorescentes compactas (CFL) fueron diseñadas para:',
     options: [
-      'Iluminación de grandes estadios.',
-      'Sustituir a las lámparas incandescentes convencionales ofreciendo mayor eficiencia y vida útil.',
-      'Alumbrado público de carreteras.',
-      'Funcionar con corriente continua exclusivamente.'
+      'Iluminar estadios',
+      'Sustituir incandescentes',
+      'Alumbrado público',
+      'Funcionar solo con CC'
     ],
     correctAnswerIndex: 1,
-    explanation: 'Las lámparas fluorescentes compactas se fabricaron para sustituir a las lámparas incandescentes convencionales, consumiendo menos energía y teniendo una vida útil más larga, con un casquillo compatible.'
+    explanation: 'Las lámparas fluorescentes compactas se fabricaron para sustituir a las lámparas incandescentes convencionales, ofreciendo mayor eficiencia y vida útil.'
   },
   {
     id: 'u4q30',
     unit: 4,
-    questionText: 'El Recinto de Instalaciones de Telecomunicación Superior (RITS) aloja principalmente:',
+    questionText: 'El Recinto de Instalaciones de Telecomunicación Superior (RITS) aloja:',
     options: [
-      'Los contadores de telefonía.',
-      'Los equipos de cabecera para la captación y distribución de señales de Radio y Televisión (RTV).',
-      'Los puntos de interconexión con los operadores de banda ancha.',
-      'Los servidores de datos del edificio.'
+      'Contadores telefonía',
+      'Equipos cabecera RTV',
+      'Puntos interconexión BA',
+      'Servidores de datos'
     ],
     correctAnswerIndex: 1,
-    explanation: 'El RITS es el local donde se instalan los elementos necesarios para la prestación del servicio de RTV, como los equipos de cabecera (amplificadores, etc.) para su distribución.'
+    explanation: 'El RITS es el local donde se instalan los elementos necesarios para la prestación del servicio de RTV, como los equipos de cabecera (amplificadores).'
   },
   {
     id: 'u4q31',
     unit: 4,
-    questionText: '¿Qué característica define la "directividad" de una antena?',
+    questionText: 'Característica "directividad" de una antena:',
     options: [
-      'Su resistencia al viento.',
-      'El rango de frecuencias que puede recibir.',
-      'Su capacidad de concentrar la energía absorbida o radiada en una dirección específica.',
-      'El material del que está fabricada.'
+      'Resistencia al viento',
+      'Rango de frecuencias',
+      'Concentración de energía',
+      'Material de fabricación'
     ],
     correctAnswerIndex: 2,
-    explanation: 'La directividad de una antena se refiere a su capacidad de concentrar la energía que radia (si es emisora) o que capta (si es receptora) en una dirección particular del espacio.'
+    explanation: 'La directividad de una antena se refiere a su capacidad de concentrar la energía que radia o capta en una dirección específica del espacio.'
   },
   {
     id: 'u4q32',
     unit: 4,
-    questionText: 'El "cableado estructurado" en un edificio busca proporcionar una infraestructura de comunicaciones que sea:',
+    questionText: '"Cableado estructurado" busca una infraestructura de comunicaciones:',
     options: [
-      'Lo más barata posible, usando cables de baja calidad.',
-      'Exclusivamente para la red eléctrica.',
-      'Versátil, organizada y capaz de soportar diversos servicios (voz, datos, vídeo) y tecnologías futuras.',
-      'Visible y accesible desde cualquier punto del edificio.'
+      'Barata y baja calidad',
+      'Solo para red eléctrica',
+      'Versátil y organizada',
+      'Visible y accesible'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Los sistemas de cableado estructurado sirven para satisfacer las necesidades de comunicación del edificio de forma global, permitiendo la transmisión de voz, datos y otras señales, y facilitando futuras ampliaciones o cambios.'
+    explanation: 'Los sistemas de cableado estructurado buscan proporcionar una infraestructura versátil, organizada y capaz de soportar diversos servicios (voz, datos, vídeo) y tecnologías futuras.'
   },
   {
     id: 'u4q33',
     unit: 4,
-    questionText: '¿Cuál es la principal ventaja de transmitir "voz y datos digitalizados" por el mismo cableado?',
+    questionText: 'Ventaja de transmitir "voz y datos digitalizados" por mismo cableado:',
     options: [
-      'Reduce la velocidad de transmisión.',
-      'Aumenta la necesidad de diferentes tipos de cables.',
-      'Permite un sistema de comunicaciones global e integrado utilizando una infraestructura común.',
-      'Elimina la necesidad de un router.'
+      'Reduce velocidad',
+      'Más tipos de cables',
+      'Sistema global integrado',
+      'Elimina router'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Al digitalizar la voz y transmitirla como datos, se puede utilizar la misma infraestructura de cableado estructurado para todos los servicios de comunicación (teléfono, ordenadores, etc.), logrando un sistema integrado.'
+    explanation: 'Al digitalizar la voz y transmitirla como datos, se puede utilizar la misma infraestructura de cableado estructurado para todos los servicios, logrando un sistema integrado.'
   },
   {
     id: 'u4q34',
     unit: 4,
-    questionText: 'El Real Decreto 346/2011 es conocido como el reglamento de:',
+    questionText: 'El Real Decreto 346/2011 es el reglamento de:',
     options: [
-      'Baja Tensión (REBT).',
-      'Protección Contra Incendios (RIPCI).',
-      'Instalaciones Térmicas (RITE).',
-      'Infraestructuras Comunes de Telecomunicaciones (ICT2).'
+      'Baja Tensión (REBT)',
+      'Contra Incendios (RIPCI)',
+      'Térmicas (RITE)',
+      'Telecomunicaciones (ICT2)'
     ],
     correctAnswerIndex: 3,
-    explanation: 'El Real Decreto 346/2011, de 11 de marzo, aprueba el Reglamento regulador de las infraestructuras comunes de telecomunicaciones para el acceso a los servicios de telecomunicación en el interior de los edificios, conocido como ICT2.'
+    explanation: 'El Real Decreto 346/2011 aprueba el Reglamento regulador de las infraestructuras comunes de telecomunicaciones (ICT2).'
   },
   {
     id: 'u4q35',
     unit: 4,
-    questionText: '¿Qué es la "caída de tensión" en un circuito eléctrico?',
+    questionText: '¿Qué es la "caída de tensión" en un circuito?',
     options: [
-      'Un aumento repentino del voltaje.',
-      'La diferencia de potencial que suministra la fuente.',
-      'La disminución de la tensión eléctrica a lo largo de un conductor debido a su resistencia.',
-      'El punto donde el circuito se interrumpe.'
+      'Aumento de voltaje',
+      'Potencial de la fuente',
+      'Disminución de tensión',
+      'Interrupción circuito'
     ],
     correctAnswerIndex: 2,
-    explanation: 'La caída de tensión es la diferencia de potencial (voltaje) que se pierde a lo largo de un conductor cuando circula una corriente eléctrica, debido a la resistencia del propio conductor.'
+    explanation: 'La caída de tensión es la disminución del voltaje eléctrico a lo largo de un conductor debido a su resistencia.'
   },
   {
     id: 'u4q36',
     unit: 4,
-    questionText: '¿Para qué sirve el "poder de corte" de un interruptor magnetotérmico?',
+    questionText: 'El "poder de corte" de un magnetotérmico indica:',
     options: [
-      'Indica la potencia máxima que puede consumir el circuito.',
-      'Es la intensidad máxima de cortocircuito que el interruptor puede interrumpir de forma segura.',
-      'Define la sensibilidad del interruptor a las sobrecargas.',
-      'Mide el tiempo que tarda en dispararse.'
+      'Potencia máx. circuito',
+      'Intensidad máx. cortocircuito',
+      'Sensibilidad a sobrecargas',
+      'Tiempo de disparo'
     ],
     correctAnswerIndex: 1,
-    explanation: 'El poder de corte es la intensidad máxima de cortocircuito (en kA) que el interruptor automático puede interrumpir sin sufrir daños.'
+    explanation: 'El poder de corte es la intensidad máxima de cortocircuito (en kA) que el interruptor automático puede interrumpir de forma segura.'
   },
   {
     id: 'u4q37',
     unit: 4,
-    questionText: 'Las lámparas halógenas son una evolución de las incandescentes que contienen en su interior:',
+    questionText: 'Las lámparas halógenas contienen en su interior:',
     options: [
-      'Vapor de mercurio a alta presión.',
-      'Un gas inerte y un halógeno (yodo, bromo).',
-      'Polvos fluorescentes.',
-      'Un chip LED.'
+      'Vapor de mercurio',
+      'Gas inerte y halógeno',
+      'Polvos fluorescentes',
+      'Un chip LED'
     ],
     correctAnswerIndex: 1,
-    explanation: 'Las lámparas halógenas contienen en su interior una atmósfera gaseosa formada por un gas inerte y una pequeña cantidad de un halógeno (como yodo o bromo) o un halogenuro metálico.'
+    explanation: 'Las lámparas halógenas contienen una atmósfera gaseosa formada por un gas inerte y una pequeña cantidad de un halógeno (como yodo o bromo).'
   },
   {
     id: 'u4q38',
     unit: 4,
-    questionText: 'En el contexto de las ICT, ¿qué significa RTV?',
+    questionText: 'En ICT, ¿qué significa RTV?',
     options: [
-      'Red Telefónica de Vivienda.',
-      'Registro Técnico de Verificación.',
-      'Radiodifusión y Televisión (terrestre y satélite).',
-      'Regulador de Tensión Variable.'
+      'Red Telefónica Vivienda',
+      'Registro Técnico',
+      'Radiodifusión y Televisión',
+      'Regulador Tensión'
     ],
     correctAnswerIndex: 2,
     explanation: 'RTV en el ámbito de las ICT se refiere a los servicios de Radiodifusión y Televisión, tanto terrestre como por satélite.'
@@ -498,27 +498,27 @@ export const unit4Questions = [
   {
     id: 'u4q39',
     unit: 4,
-    questionText: '¿Cuál es una precaución importante al instalar cableado estructurado para voz/datos cerca de cables de energía eléctrica?',
+    questionText: 'Precaución al instalar cableado de datos cerca de cables de energía:',
     options: [
-      'Utilizar los mismos tubos para ahorrar espacio.',
-      'Cruzar los cables de datos y energía perpendicularmente siempre que sea posible.',
-      'Mantenerlos separados en canalizaciones distintas o con separadores para evitar interferencias electromagnéticas.',
-      'Conectar las tierras de ambos sistemas en múltiples puntos.'
+      'Usar mismos tubos',
+      'Cruzarlos siempre',
+      'Separarlos o usar blindaje',
+      'Conectar tierras juntas'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Los conductores de señal (voz/datos) deben estar separados en canalizaciones distintas de los conductores de energía eléctrica, o usar separadores, para evitar interferencias debidas al campo magnético generado por la corriente eléctrica.'
+    explanation: 'Los conductores de señal (voz/datos) deben estar separados de los de energía eléctrica, o usar separadores/blindaje, para evitar interferencias electromagnéticas.'
   },
   {
     id: 'u4q40',
     unit: 4,
-    questionText: 'El "borne principal de tierra" de una instalación eléctrica sirve para:',
+    questionText: 'El "borne principal de tierra" sirve para unir:',
     options: [
-      'Conectar el interruptor general automático.',
-      'Unir los conductores de tierra, los de protección y los de unión equipotencial.',
-      'Distribuir la fase a los diferentes circuitos.',
-      'Alojar el contador de energía.'
+      'Interruptor general',
+      'Conductores de tierra y protección',
+      'Fase a circuitos',
+      'Contador de energía'
     ],
     correctAnswerIndex: 1,
-    explanation: 'El borne principal de tierra es el punto donde se unen los conductores de tierra (de los electrodos), los conductores de protección de la instalación, los de unión equipotencial principal y los de puesta a tierra funcional si son necesarios.'
+    explanation: 'El borne principal de tierra es el punto donde se unen los conductores de tierra (de los electrodos), los conductores de protección de la instalación y los de unión equipotencial.'
   }
 ];
