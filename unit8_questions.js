@@ -1,262 +1,262 @@
 // unit8_questions.js
-// Preguntas basadas en el resumen de la Unidad 8: Representación de instalaciones especiales
+// Preguntas basadas en el resumen de la Unidad 8: Representación de instalaciones especiales (Opciones Revisadas)
 export const unit8Questions = [
   {
     id: 'u8q1',
     unit: 8,
-    questionText: '¿Cuál es la principal diferencia entre un ascensor eléctrico y uno hidráulico en cuanto a su sistema de tracción?',
+    questionText: 'Diferencia principal ascensor eléctrico vs. hidráulico (tracción):',
     options: [
-      'El eléctrico usa aceite a presión y el hidráulico un motor eléctrico con polea.',
-      'El eléctrico usa un motor eléctrico, polea y cables (con contrapeso), y el hidráulico un pistón impulsado por aceite.',
-      'Ambos usan el mismo sistema, pero el hidráulico es más rápido.',
-      'El eléctrico no necesita cuarto de máquinas y el hidráulico sí.'
+      'Eléctrico usa aceite',
+      'Eléctrico: motor/cables; Hidráulico: pistón/aceite',
+      'Ambos usan mismo sistema',
+      'Eléctrico sin cuarto máq.'
     ],
     correctAnswerIndex: 1,
-    explanation: 'Los ascensores eléctricos utilizan un motor eléctrico, una polea y cables (generalmente con un contrapeso), mientras que los hidráulicos mueven la cabina mediante un pistón impulsado por aceite a presión.'
+    explanation: 'Los ascensores eléctricos utilizan un motor eléctrico, polea y cables (con contrapeso), mientras que los hidráulicos mueven la cabina mediante un pistón impulsado por aceite a presión.'
   },
   {
     id: 'u8q2',
     unit: 8,
     questionText: 'Un ascensor con "Variación de Frecuencia (VVVF)" se caracteriza por:',
     options: [
-      'Tener solo una velocidad de funcionamiento.',
-      'Arrancar y parar de forma muy brusca.',
-      'Permitir un arranque y parada más suave y confortable mediante control electrónico de la velocidad.',
-      'Ser exclusivo para montacargas.'
+      'Una sola velocidad',
+      'Arranque/parada bruscos',
+      'Arranque/parada suaves',
+      'Exclusivo montacargas'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Los ascensores con variación de frecuencia (VVVF) tienen una trayectoria de su velocidad curva, permitiendo una arrancada y parada más suave y confortable, además de una nivelación precisa.'
+    explanation: 'Los ascensores con variación de frecuencia (VVVF) permiten un arranque y parada más suave y confortable mediante control electrónico de la velocidad.'
   },
   {
     id: 'u8q3',
     unit: 8,
-    questionText: '¿Qué es un "montacargas" según la definición de la Unidad 8?',
+    questionText: '¿Qué es un "montacargas" según la Unidad 8?',
     options: [
-      'Un tipo de ascensor de alta velocidad para personas.',
-      'Un aparato elevador que se desplaza entre guías verticales, dotado de un camarín cuyas dimensiones y constitución impiden el acceso a las personas.',
-      'Una escalera mecánica para cargas pesadas.',
-      'Un sistema de transporte horizontal de materiales.'
+      'Ascensor alta velocidad',
+      'Elevador para cargas (no personas)',
+      'Escalera para cargas',
+      'Transporte horizontal'
     ],
     correctAnswerIndex: 1,
-    explanation: 'Un montacargas es un aparato elevador que se desplaza entre guías verticales, que sirve niveles definidos y que está dotado de un camarín cuyas dimensiones y constitución impiden el acceso a las personas (diseñado para cargas).'
+    explanation: 'Un montacargas es un aparato elevador diseñado principalmente para cargas, con un camarín cuyas dimensiones o constitución impiden el acceso normal de personas.'
   },
   {
     id: 'u8q4',
     unit: 8,
-    questionText: 'El "limitador de velocidad" en un ascensor tiene como función principal:',
+    questionText: 'Función principal del "limitador de velocidad" en un ascensor:',
     options: [
-      'Aumentar la velocidad de la cabina en horas pico.',
-      'Detectar los excesos de velocidad de la cabina y accionar el paracaídas.',
-      'Regular la suavidad de la parada en cada planta.',
-      'Ahorrar energía eléctrica durante el funcionamiento.'
+      'Aumentar velocidad',
+      'Detectar exceso y activar paracaídas',
+      'Regular suavidad parada',
+      'Ahorrar energía'
     ],
     correctAnswerIndex: 1,
-    explanation: 'El limitador de velocidad es un elemento de seguridad que detecta los excesos de velocidad de la cabina y, en caso necesario, acciona el mecanismo del paracaídas para detenerla.'
+    explanation: 'El limitador de velocidad es un elemento de seguridad que detecta los excesos de velocidad de la cabina y acciona el mecanismo del paracaídas.'
   },
   {
     id: 'u8q5',
     unit: 8,
-    questionText: '¿Qué es un SPDA en el contexto de la protección contra rayos?',
+    questionText: '¿Qué es un SPDA en protección contra rayos?',
     options: [
-      'Un tipo de cable especial resistente a descargas.',
-      'Un Sistema de Protección contra Descargas Atmosféricas.',
-      'Un sensor de proximidad de tormentas.',
-      'Un pararrayos de uso exclusivamente industrial.'
+      'Cable especial',
+      'Sistema Protección Descargas',
+      'Sensor de tormentas',
+      'Pararrayos industrial'
     ],
     correctAnswerIndex: 1,
-    explanation: 'SPDA son las siglas de Sistema de Protección contra Descargas Atmosféricas, cuya función es minimizar los daños que ocurren en las edificaciones cuando los rayos impactan directamente.'
+    explanation: 'SPDA son las siglas de Sistema de Protección contra Descargas Atmosféricas, cuya función es minimizar los daños por impacto directo de rayos.'
   },
   {
     id: 'u8q6',
     unit: 8,
     questionText: 'El pararrayos tipo "Jaula de Faraday" consiste en:',
     options: [
-      'Una única punta metálica muy alta.',
-      'Un dispositivo electrónico que ioniza el aire.',
-      'Una red de cables conductores colocados sobre el edificio, conectados a tierra.',
-      'Un sistema que repele los rayos.'
+      'Una punta metálica',
+      'Dispositivo ionizador',
+      'Red de cables en cubierta',
+      'Sistema que repele rayos'
     ],
     correctAnswerIndex: 2,
-    explanation: 'La Jaula de Faraday es un pararrayos reticular de red que consta de una red de cables colocados en cumbreras y limatesas alrededor de todo el edificio, con pequeñas puntas y conexiones a tierra.'
+    explanation: 'La Jaula de Faraday es un pararrayos reticular que consta de una red de cables conductores colocados sobre el edificio y conectados a tierra.'
   },
   {
     id: 'u8q7',
     unit: 8,
-    questionText: '¿Qué tipo de pararrayos está prohibido en España debido a su riesgo radiológico?',
+    questionText: '¿Qué tipo de pararrayos está prohibido en España por riesgo radiológico?',
     options: [
       'Punta Franklin',
       'Jaula de Faraday',
       'Pararrayos Radiactivo',
-      'Pararrayos con Dispositivo de Cebado (PDC)'
+      'Pararrayos PDC'
     ],
     correctAnswerIndex: 2,
-    explanation: 'El Real Decreto 14428/89 prohíbe la instalación de pararrayos radiactivos en España debido al riesgo que representan sus componentes.'
+    explanation: 'El Real Decreto 14428/89 prohíbe la instalación de pararrayos radiactivos en España.'
   },
   {
     id: 'u8q8',
     unit: 8,
     questionText: 'La energía solar fotovoltaica convierte la luz solar en:',
     options: [
-      'Calor para agua sanitaria.',
-      'Energía mecánica directamente.',
-      'Electricidad en forma de corriente continua.',
-      'Energía eólica.'
+      'Calor para ACS',
+      'Energía mecánica',
+      'Electricidad (CC)',
+      'Energía eólica'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Una instalación solar fotovoltaica origina energía eléctrica (en forma de corriente continua) a partir de la luz solar, mediante el efecto fotovoltaico en los paneles.'
+    explanation: 'Una instalación solar fotovoltaica origina electricidad (en forma de corriente continua) a partir de la luz solar.'
   },
   {
     id: 'u8q9',
     unit: 8,
-    questionText: '¿Cuál es la función principal de un "inversor" en una instalación fotovoltaica?',
+    questionText: 'Función principal de un "inversor" en instalación fotovoltaica:',
     options: [
-      'Almacenar la energía generada.',
-      'Regular la carga de las baterías.',
-      'Convertir la corriente continua (CC) de los paneles o baterías en corriente alterna (CA) utilizable.',
-      'Orientar los paneles hacia el sol.'
+      'Almacenar energía',
+      'Regular carga baterías',
+      'Convertir CC en CA',
+      'Orientar paneles'
     ],
     correctAnswerIndex: 2,
-    explanation: 'El inversor transforma la corriente continua (CC) almacenada en la batería o generada por los paneles en corriente alterna (CA) de 230V, apta para los electrodomésticos o la red.'
+    explanation: 'El inversor transforma la corriente continua (CC) de los paneles o baterías en corriente alterna (CA) utilizable.'
   },
   {
     id: 'u8q10',
     unit: 8,
-    questionText: 'La "domótica" en una vivienda tiene como objetivo principal:',
+    questionText: 'Objetivo principal de la "domótica" en una vivienda:',
     options: [
-      'Aumentar el valor de reventa de la propiedad exclusivamente.',
-      'Integrar y automatizar diversas tareas y sistemas (iluminación, climatización, seguridad) para mejorar el confort, la eficiencia y la seguridad.',
-      'Reemplazar todas las instalaciones tradicionales por sistemas inalámbricos.',
-      'Reducir la necesidad de mantenimiento de las instalaciones.'
+      'Aumentar valor reventa',
+      'Integrar y automatizar',
+      'Reemplazar instalaciones',
+      'Reducir mantenimiento'
     ],
     correctAnswerIndex: 1,
-    explanation: 'La domótica es una técnica que permite integrar diversas tareas y el control de instalaciones en una red de control domótica, con el objetivo de mejorar el confort, la seguridad y la gestión energética.'
+    explanation: 'La domótica permite integrar y automatizar diversas tareas y sistemas para mejorar el confort, la eficiencia y la seguridad.'
   },
   {
     id: 'u8q11',
     unit: 8,
-    questionText: 'En un sistema domótico "centralizado", ¿qué ocurre si falla el controlador principal?',
+    questionText: 'En sistema domótico "centralizado", si falla el controlador principal:',
     options: [
-      'Solo algunas funciones dejan de operar.',
-      'El sistema sigue funcionando con capacidades reducidas.',
-      'Todos los sensores y actuadores conectados a él dejan de funcionar.',
-      'El sistema pasa automáticamente a control manual.'
+      'Algunas funciones fallan',
+      'Sigue con capacidad reducida',
+      'Todo deja de funcionar',
+      'Pasa a control manual'
     ],
     correctAnswerIndex: 2,
-    explanation: 'En un sistema centralizado, se dispone de un solo nodo (controlador) y todos los sensores y actuadores están conectados a él. Si este nodo falla, todo el sistema puede dejar de funcionar.'
+    explanation: 'En un sistema centralizado, si el único nodo controlador falla, todos los sensores y actuadores conectados a él pueden dejar de funcionar.'
   },
   {
     id: 'u8q12',
     unit: 8,
     questionText: '¿Qué es un "sensor" en un sistema domótico?',
     options: [
-      'Un dispositivo que ejecuta una acción física (ej. encender una luz).',
-      'Un dispositivo que capta información del entorno (temperatura, movimiento, luz) y la envía al sistema.',
-      'La interfaz de usuario para controlar el sistema.',
-      'El cableado que conecta los diferentes elementos.'
+      'Ejecuta acción física',
+      'Capta información entorno',
+      'Interfaz de usuario',
+      'Cableado de conexión'
     ],
     correctAnswerIndex: 1,
-    explanation: 'Los sensores son los dispositivos que perciben señales del exterior o interior (temperatura, presencia, luz, etc.) y las transmiten al sistema domótico para que actúe en consecuencia.'
+    explanation: 'Los sensores son dispositivos que captan información del entorno (temperatura, movimiento, luz, etc.) y la envían al sistema domótico.'
   },
   {
     id: 'u8q13',
     unit: 8,
-    questionText: 'Los paneles solares fotovoltaicos "monocristalinos" se caracterizan por:',
+    questionText: 'Paneles solares FV "monocristalinos" se caracterizan por:',
     options: [
-      'Ser los más baratos y menos eficientes.',
-      'Tener un aspecto azul con un patrón de mosaico.',
-      'Ser más costosos de fabricar pero conseguir mayores eficiencias (hasta 22%).',
-      'Ser flexibles y de color marrón homogéneo.'
+      'Más baratos, baja eficiencia',
+      'Aspecto azul mosaico',
+      'Mayor eficiencia, más caros',
+      'Flexibles, color marrón'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Los paneles monocristalinos son más costosos y difíciles de fabricar, pero consiguen eficiencias de hasta el 22% y suelen tener un aspecto negro uniforme.'
+    explanation: 'Los paneles monocristalinos son más costosos de fabricar pero consiguen mayores eficiencias (hasta 22%).'
   },
   {
     id: 'u8q14',
     unit: 8,
-    questionText: '¿Cuál es la función de un "regulador de carga" en una instalación fotovoltaica aislada?',
+    questionText: 'Función de "regulador de carga" en FV aislada:',
     options: [
-      'Convertir la corriente continua en alterna.',
-      'Aumentar la tensión de los paneles.',
-      'Controlar el proceso de carga de las baterías para protegerlas y optimizar su vida útil.',
-      'Medir la cantidad de energía solar recibida.'
+      'Convertir CC en CA',
+      'Aumentar tensión paneles',
+      'Controlar carga baterías',
+      'Medir energía solar'
     ],
     correctAnswerIndex: 2,
-    explanation: 'El regulador de carga controla la carga de las baterías, evitando sobrecargas o descargas excesivas, lo que es crucial para la vida útil de las baterías en sistemas aislados.'
+    explanation: 'El regulador de carga controla el proceso de carga de las baterías, evitando sobrecargas o descargas excesivas, crucial para su vida útil.'
   },
   {
     id: 'u8q15',
     unit: 8,
-    questionText: 'La tecnología de comunicación domótica "KNX" es un ejemplo de:',
+    questionText: 'Tecnología domótica "KNX" es un ejemplo de sistema con:',
     options: [
-      'Sistema por corrientes portadoras (PLC).',
-      'Sistema inalámbrico basado en WiFi.',
-      'Sistema con bus de campo dedicado (estándar europeo abierto).',
-      'Sistema centralizado con relés programables.'
+      'Corrientes portadoras',
+      'Inalámbrico WiFi',
+      'Bus de campo dedicado',
+      'Relés programables'
     ],
     correctAnswerIndex: 2,
-    explanation: 'KNX es un estándar abierto muy extendido para sistemas domóticos y de control de edificios que utiliza un bus de campo dedicado para la comunicación entre dispositivos.'
+    explanation: 'KNX es un estándar abierto para sistemas domóticos que utiliza un bus de campo dedicado para la comunicación entre dispositivos.'
   },
   {
     id: 'u8q16',
     unit: 8,
-    questionText: '¿Cuál de estas NO es una ventaja principal de la domótica mencionada en la Unidad 8?',
+    questionText: '¿Cuál NO es una ventaja principal de la domótica?',
     options: [
-      'Ahorro energético gracias a la gestión eficiente.',
-      'Aumento significativo del valor de la propiedad garantizado.',
-      'Mejora de la comodidad y el confort.',
-      'Incremento de la seguridad personal y patrimonial.'
+      'Ahorro energético',
+      'Aumento valor garantizado',
+      'Mejora confort',
+      'Incremento seguridad'
     ],
     correctAnswerIndex: 1,
-    explanation: 'Si bien la domótica puede añadir valor, las ventajas principales destacadas son el ahorro energético, el confort, la seguridad y el acceso a servicios. Un aumento significativo del valor no está garantizado y depende de muchos factores.'
+    explanation: 'Las ventajas principales de la domótica son el ahorro energético, el confort y la seguridad. Un aumento del valor de la propiedad no está garantizado.'
   },
   {
     id: 'u8q17',
     unit: 8,
-    questionText: 'El "foso" de un ascensor es:',
+    questionText: 'El "foso" de un ascensor es la parte:',
     options: [
-      'El espacio donde se aloja el motor en ascensores sin cuarto de máquinas.',
-      'La parte superior del hueco, por encima de la última parada.',
-      'La parte inferior del recinto del ascensor, debajo del último nivel servido.',
-      'La cabina del ascensor.'
+      'Donde va el motor (MRL)',
+      'Superior del hueco',
+      'Inferior del hueco',
+      'La propia cabina'
     ],
     correctAnswerIndex: 2,
-    explanation: 'El foso es la parte inferior del recinto del ascensor, situada por debajo del nivel de la última parada, y aloja elementos como los amortiguadores.'
+    explanation: 'El foso es la parte inferior del recinto del ascensor, situada por debajo del nivel de la última parada.'
   },
   {
     id: 'u8q18',
     unit: 8,
     questionText: 'Los "amortiguadores" en un ascensor sirven para:',
     options: [
-      'Reducir el ruido del motor.',
-      'Mejorar la suavidad del arranque y parada normales.',
-      'Detener la cabina o el contrapeso en caso de que sobrepasen el extremo del recorrido.',
-      'Pesar la carga de la cabina.'
+      'Reducir ruido motor',
+      'Suavizar paradas',
+      'Detener si sobrepasa recorrido',
+      'Pesar la carga'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Los amortiguadores están ubicados en el extremo inferior del recorrido y sirven para detener la cabina o el contrapeso en caso necesario, si sobrepasan sus límites de recorrido.'
+    explanation: 'Los amortiguadores están ubicados en el extremo inferior del recorrido y sirven para detener la cabina o el contrapeso si sobrepasan sus límites.'
   },
   {
     id: 'u8q19',
     unit: 8,
-    questionText: 'El sistema de captación de un pararrayos tipo "Punta Franklin" se basa en:',
+    questionText: 'Sistema de captación de pararrayos "Punta Franklin" se basa en:',
     options: [
-      'La creación de un campo magnético.',
-      'El "efecto punta" para atraer la descarga.',
-      'La ionización del aire mediante un dispositivo electrónico.',
-      'Una red de cables sobre la cubierta.'
+      'Campo magnético',
+      'Efecto punta',
+      'Ionización electrónica',
+      'Red de cables'
     ],
     correctAnswerIndex: 1,
-    explanation: 'El pararrayos Franklin funciona basado en la teoría de la punta, donde la acumulación de carga en la punta metálica crea un intenso campo que ioniza el aire, facilitando un camino para la descarga.'
+    explanation: 'El pararrayos Franklin funciona basado en la teoría del "efecto punta", donde la acumulación de carga facilita un camino para la descarga.'
   },
   {
     id: 'u8q20',
     unit: 8,
     questionText: '¿Qué es el "efecto fotovoltaico"?',
     options: [
-      'La conversión de calor en electricidad.',
-      'La transformación de luz solar en electricidad a través de un material semiconductor.',
-      'La capacidad de un material para reflejar la luz solar.',
-      'El calentamiento de un fluido por la acción del sol.'
+      'Conversión calor-luz',
+      'Transformación luz-electricidad',
+      'Reflexión luz solar',
+      'Calentamiento por sol'
     ],
     correctAnswerIndex: 1,
     explanation: 'El efecto fotovoltaico es la transformación directa de la luz solar en electricidad que se produce en ciertos materiales semiconductores.'
@@ -264,261 +264,261 @@ export const unit8Questions = [
   {
     id: 'u8q21',
     unit: 8,
-    questionText: 'Un "inversor de conexión a red" en una instalación FV permite:',
+    questionText: 'Un "inversor de conexión a red" en FV permite:',
     options: [
-      'Cargar baterías exclusivamente.',
-      'Alimentar solo aparatos de corriente continua.',
-      'Sincronizar la energía generada por los paneles con la red eléctrica para autoconsumo y/o vertido.',
-      'Funcionar de forma aislada sin conexión a la red.'
+      'Solo cargar baterías',
+      'Alimentar solo CC',
+      'Sincronizar con red',
+      'Funcionar aislado'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Un inversor de conexión a red convierte la CC de los paneles en CA sincronizada con la red, permitiendo que la energía solar se use para autoconsumo y que los excedentes puedan ser vertidos a la red eléctrica.'
+    explanation: 'Un inversor de conexión a red convierte la CC de los paneles en CA sincronizada con la red, permitiendo autoconsumo y/o vertido.'
   },
   {
     id: 'u8q22',
     unit: 8,
-    questionText: 'La topología de red domótica "en estrella" se caracteriza por:',
+    questionText: 'Topología de red domótica "en estrella" conecta dispositivos a:',
     options: [
-      'Conectar todos los nodos en una línea troncal.',
-      'Conectar cada nodo a todos los demás.',
-      'Organizar los nodos jerárquicamente.',
-      'Conectar todos los dispositivos a un punto o nodo central.'
+      'Línea troncal',
+      'Todos entre sí',
+      'Jerárquicamente',
+      'Nodo central'
     ],
     correctAnswerIndex: 3,
-    explanation: 'En la topología en estrella, los canales de transmisión de todos los dispositivos están conectados entre sí en un punto o nodo central (concentrador o hub).'
+    explanation: 'En la topología en estrella, todos los dispositivos están conectados a un punto o nodo central (concentrador o hub).'
   },
   {
     id: 'u8q23',
     unit: 8,
-    questionText: '¿Cuál es una medida de mantenimiento preventivo importante para los paneles fotovoltaicos?',
+    questionText: 'Mantenimiento preventivo importante para paneles FV:',
     options: [
-      'Pintarlos cada año para protegerlos del sol.',
-      'Limpiar la suciedad acumulada en su superficie.',
-      'Reemplazar las células fotovoltaicas anualmente.',
-      'Añadirles agua destilada.'
+      'Pintarlos anualmente',
+      'Limpiar suciedad superficie',
+      'Reemplazar células',
+      'Añadir agua destilada'
     ],
     correctAnswerIndex: 1,
-    explanation: 'La limpieza de la superficie de los paneles es importante, ya que la suciedad (polvo, hojas, etc.) puede reducir la cantidad de luz que llega a las células y, por tanto, la producción de energía.'
+    explanation: 'La limpieza de la suciedad acumulada en la superficie de los paneles es importante para mantener su rendimiento.'
   },
   {
     id: 'u8q24',
     unit: 8,
-    questionText: '¿Qué tipo de ascensor NO necesita generalmente un cuarto de máquinas en la parte superior del edificio?',
+    questionText: '¿Qué tipo de ascensor NO necesita cuarto de máquinas superior?',
     options: [
-      'Ascensor eléctrico de 1 velocidad.',
-      'Ascensor eléctrico de 2 velocidades.',
-      'Ascensor hidráulico.',
-      'Todos los ascensores requieren cuarto de máquinas superior.'
+      'Eléctrico 1 velocidad',
+      'Eléctrico 2 velocidades',
+      'Hidráulico',
+      'Todos lo necesitan'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Una ventaja de los ascensores hidráulicos es que su central hidráulica (equivalente al cuarto de máquinas) se puede colocar en cualquier parte del edificio, no necesariamente en la parte superior.'
+    explanation: 'Una ventaja de los ascensores hidráulicos es que su central hidráulica puede colocarse en cualquier parte del edificio, no necesariamente arriba.'
   },
   {
     id: 'u8q25',
     unit: 8,
-    questionText: 'La fórmula Ne = Ng x Ae x C1 x 10-6 se utiliza en el CTE para:',
+    questionText: 'Fórmula Ne = Ng x Ae x C1 x 10-6 se usa en CTE para:',
     options: [
-      'Calcular la potencia de un ascensor.',
-      'Dimensionar una instalación fotovoltaica.',
-      'Evaluar el riesgo de impacto de rayo sobre una estructura.',
-      'Determinar el número de nodos en una red domótica.'
+      'Potencia ascensor',
+      'Dimensionar FV',
+      'Evaluar riesgo de rayo',
+      'Nº nodos domótica'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Esta fórmula se utiliza para calcular la frecuencia esperada de impactos de rayo (Ne) sobre una estructura, como parte de la evaluación del riesgo y la necesidad de un sistema de protección contra el rayo.'
+    explanation: 'Esta fórmula se utiliza para calcular la frecuencia esperada de impactos de rayo (Ne) sobre una estructura, para evaluar la necesidad de pararrayos.'
   },
   {
     id: 'u8q26',
     unit: 8,
     questionText: '¿Qué son los "actuadores" en un sistema domótico?',
     options: [
-      'Los cables de comunicación.',
-      'Los dispositivos que detectan cambios en el ambiente.',
-      'Los dispositivos que ejecutan las órdenes del sistema (ej. encender luces, mover motores).',
-      'Las pantallas de control.'
+      'Cables comunicación',
+      'Detectores ambiente',
+      'Ejecutores de órdenes',
+      'Pantallas de control'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Los actuadores son los componentes de un sistema domótico que realizan una acción física sobre las instalaciones en respuesta a una señal del controlador (ej. relés, motores, válvulas).'
+    explanation: 'Los actuadores son los componentes que realizan una acción física (encender luces, mover motores) en respuesta a una orden del sistema domótico.'
   },
   {
     id: 'u8q27',
     unit: 8,
-    questionText: 'Los paneles fotovoltaicos de "silicio amorfo" (capa fina) se caracterizan por:',
+    questionText: 'Paneles FV de "silicio amorfo" (capa fina) son:',
     options: [
-      'Tener la mayor eficiencia del mercado.',
-      'Ser los más caros de producir.',
-      'Ser más económicos y flexibles, pero con menor eficiencia que los cristalinos.',
-      'No necesitar luz solar directa para funcionar.'
+      'Mayor eficiencia',
+      'Más caros producir',
+      'Económicos, flexibles, baja eficiencia',
+      'No necesitan sol directo'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Los paneles de silicio amorfo o de capa fina son los más económicos y pueden ser flexibles, pero su eficiencia es generalmente inferior (alrededor del 10%) comparada con los monocristalinos o policristalinos.'
+    explanation: 'Los paneles de silicio amorfo son más económicos y pueden ser flexibles, pero su eficiencia es generalmente inferior a los cristalinos.'
   },
   {
     id: 'u8q28',
     unit: 8,
-    questionText: 'Un "inversor cargador" en una instalación FV combina las funciones de:',
+    questionText: 'Un "inversor cargador" en FV combina funciones de:',
     options: [
-      'Inversor y panel solar.',
-      'Regulador de carga e inversor (y a veces cargador de baterías desde red/generador).',
-      'Batería y regulador de carga.',
-      'Panel solar y batería.'
+      'Inversor y panel',
+      'Regulador e inversor',
+      'Batería y regulador',
+      'Panel y batería'
     ],
     correctAnswerIndex: 1,
-    explanation: 'Un inversor cargador es un equipo multifunción que típicamente integra las funciones de un inversor (convertir CC a CA), un regulador de carga solar (gestionar la carga de baterías desde paneles) y, a menudo, un cargador de baterías desde una fuente de CA externa (red o generador).'
+    explanation: 'Un inversor cargador integra las funciones de un inversor (CC a CA) y un regulador de carga solar, y a menudo un cargador de baterías desde red.'
   },
   {
     id: 'u8q29',
     unit: 8,
-    questionText: 'La tecnología domótica que utiliza el cableado eléctrico existente de 230V para transmitir señales se conoce como:',
+    questionText: 'Tecnología domótica por corrientes portadoras (PLC) usa:',
     options: [
-      'Bus de campo KNX.',
-      'Sistemas inalámbricos Zigbee.',
-      'Corrientes portadoras (Power Line Carrier - PLC).',
-      'Relés programables (PLC industriales).'
+      'Bus KNX',
+      'Zigbee inalámbrico',
+      'Cableado eléctrico 230V',
+      'Relés industriales'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Los sistemas por corrientes portadoras (PLC, también conocidos como X10 en algunos contextos) utilizan la propia red eléctrica de la vivienda para transmitir las señales de control domótico.'
+    explanation: 'Los sistemas por corrientes portadoras (Power Line Carrier - PLC) utilizan la propia red eléctrica de la vivienda para transmitir las señales de control.'
   },
   {
     id: 'u8q30',
     unit: 8,
-    questionText: '¿Cuál de estos NO es un componente principal del "hueco del ascensor"?',
+    questionText: '¿Cuál NO es componente principal del "hueco del ascensor"?',
     options: [
-      'Guías metálicas de cabina y contrapeso.',
-      'Cuadro de control del ascensor.',
-      'Puertas de acceso en los pisos.',
-      'Foso con amortiguadores.'
+      'Guías metálicas',
+      'Cuadro de control',
+      'Puertas de piso',
+      'Foso y amortiguadores'
     ],
     correctAnswerIndex: 1,
-    explanation: 'El cuadro de control del ascensor se ubica generalmente en el cuarto de máquinas o, en ascensores MRL, en un armario junto al hueco o integrado en el marco de una puerta, pero no dentro del espacio de recorrido de la cabina (hueco).'
+    explanation: 'El cuadro de control del ascensor se ubica generalmente en el cuarto de máquinas o en un armario adyacente, no dentro del hueco de recorrido.'
   },
   {
     id: 'u8q31',
     unit: 8,
-    questionText: 'El "paracaídas" de un ascensor es un dispositivo de seguridad que actúa cuando:',
+    questionText: 'El "paracaídas" de un ascensor actúa cuando:',
     options: [
-      'Falla la iluminación de la cabina.',
-      'La cabina adquiere una velocidad superior a la normal, activado por el limitador.',
-      'Se produce un corte de energía eléctrica.',
-      'Las puertas de piso no cierran correctamente.'
+      'Falla luz cabina',
+      'Cabina va muy rápido',
+      'Corte de energía',
+      'Puertas no cierran'
     ],
     correctAnswerIndex: 1,
-    explanation: 'El paracaídas actúa cuando la cabina adquiere una velocidad excesiva (detectada por el limitador de velocidad), frenándola mecánicamente sobre las guías.'
+    explanation: 'El paracaídas actúa cuando la cabina adquiere una velocidad excesiva, siendo activado por el limitador de velocidad para frenarla.'
   },
   {
     id: 'u8q32',
     unit: 8,
-    questionText: 'El sistema externo de un SPDA (Sistema de Protección contra Descargas Atmosféricas) incluye:',
+    questionText: 'Sistema externo de un SPDA (pararrayos) incluye:',
     options: [
-      'Dispositivos de protección contra sobretensiones internas.',
-      'Sensores de campo eléctrico.',
-      'Captadores, conductores de bajada y toma de tierra.',
-      'Alarmas de tormenta.'
+      'Protectores sobretensión',
+      'Sensores campo eléctrico',
+      'Captador, bajante, tierra',
+      'Alarmas de tormenta'
     ],
     correctAnswerIndex: 2,
-    explanation: 'El sistema externo de un SPDA está compuesto por los elementos que interceptan el rayo (captadores), lo conducen de forma segura (conductores de bajada) y lo disipan en el suelo (sistema de puesta a tierra).'
+    explanation: 'El sistema externo de un SPDA está compuesto por el captador (que intercepta el rayo), los conductores de bajada y el sistema de puesta a tierra.'
   },
   {
     id: 'u8q33',
     unit: 8,
-    questionText: 'Una instalación fotovoltaica "aislada" (off-grid) es aquella que:',
+    questionText: 'Una instalación fotovoltaica "aislada" (off-grid):',
     options: [
-      'Solo funciona durante el día.',
-      'Está conectada a la red eléctrica para vender toda la energía producida.',
-      'Es autónoma y no está conectada a la red eléctrica pública, requiriendo baterías.',
-      'Utiliza paneles de un tipo de aislante especial.'
+      'Solo funciona de día',
+      'Vende toda energía',
+      'Es autónoma, sin red',
+      'Usa aislante especial'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Una instalación FV aislada es un sistema autoabastecedor que no tiene conexión con la red eléctrica general, por lo que necesita un sistema de almacenamiento (baterías) para suministrar energía cuando no hay sol.'
+    explanation: 'Una instalación FV aislada es autónoma, no está conectada a la red eléctrica pública y requiere baterías para almacenar energía.'
   },
   {
     id: 'u8q34',
     unit: 8,
-    questionText: 'La "ecualización" de las baterías en una instalación FV aislada tiene como objetivo:',
+    questionText: 'La "ecualización" de baterías en FV aislada busca:',
     options: [
-      'Descargarlas completamente para su reinicio.',
-      'Aumentar su voltaje nominal.',
-      'Devolverles su capacidad de almacenamiento, igualar la carga de las celdas y extender su vida útil.',
-      'Protegerlas contra cortocircuitos.'
+      'Descargarlas totalmente',
+      'Aumentar su voltaje',
+      'Recuperar capacidad',
+      'Proteger de cortocircuitos'
     ],
     correctAnswerIndex: 2,
-    explanation: 'La ecualización es un proceso de sobrecarga controlada que se realiza periódicamente en algunas baterías de plomo-ácido para igualar el estado de carga de sus celdas, disolver sulfatación y recuperar capacidad, extendiendo su vida útil.'
+    explanation: 'La ecualización es una sobrecarga controlada para baterías de plomo-ácido que ayuda a igualar celdas, disolver sulfatación y recuperar capacidad.'
   },
   {
     id: 'u8q35',
     unit: 8,
-    questionText: '¿Qué es un "nodo" en el contexto de una red domótica?',
+    questionText: '¿Qué es un "nodo" en una red domótica?',
     options: [
-      'El cable principal de la red.',
-      'Cualquier dispositivo conectado a la red con capacidad de enviar, recibir o procesar información (sensor, actuador, controlador).',
-      'El software de configuración del sistema.',
-      'La fuente de alimentación de la red.'
+      'Cable principal red',
+      'Dispositivo conectado',
+      'Software configuración',
+      'Fuente alimentación'
     ],
     correctAnswerIndex: 1,
-    explanation: 'En una red domótica, un nodo es cualquier dispositivo individual (como un sensor, un actuador o un controlador) que está conectado a la red y participa en la comunicación y/o control del sistema.'
+    explanation: 'En una red domótica, un nodo es cualquier dispositivo individual (sensor, actuador, controlador) conectado a la red.'
   },
   {
     id: 'u8q36',
     unit: 8,
-    questionText: '¿Cuál es la principal ventaja de un ascensor eléctrico con contrapeso frente a uno hidráulico sin contrapeso en términos de consumo energético?',
+    questionText: 'Ventaja de ascensor eléctrico con contrapeso vs. hidráulico sin él (consumo):',
     options: [
-      'El hidráulico consume menos en subida.',
-      'El eléctrico con contrapeso generalmente consume menos energía total porque el motor solo tiene que vencer la diferencia de peso y la fricción.',
-      'Ambos consumen la misma cantidad de energía.',
-      'El eléctrico consume más porque el motor es más grande.'
+      'Hidráulico consume menos',
+      'Eléctrico consume menos',
+      'Consumen igual',
+      'Eléctrico consume más'
     ],
     correctAnswerIndex: 1,
-    explanation: 'El contrapeso en un ascensor eléctrico equilibra el peso de la cabina y aproximadamente la mitad de la carga nominal, por lo que el motor necesita realizar menos esfuerzo y consume menos energía, especialmente en comparación con un hidráulico que debe levantar todo el peso en subida.'
+    explanation: 'El contrapeso en un ascensor eléctrico reduce el esfuerzo del motor, por lo que generalmente consume menos energía total que un hidráulico sin contrapeso.'
   },
   {
     id: 'u8q37',
     unit: 8,
-    questionText: 'La "densidad anual medida de impactos de rayo en la zona (Ng)" es un dato necesario para:',
+    questionText: 'Dato "Ng" (densidad impactos rayo) es para:',
     options: [
-      'Dimensionar los cables de un ascensor.',
-      'Calcular la producción esperada de una instalación fotovoltaica.',
-      'Evaluar el riesgo de impacto de rayo y la necesidad de un pararrayos.',
-      'Determinar el tipo de bus en una red domótica.'
+      'Dimensionar cables ascensor',
+      'Calcular producción FV',
+      'Evaluar riesgo de rayo',
+      'Determinar bus domótica'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Ng es un parámetro clave en la fórmula del CTE para calcular la frecuencia esperada de impactos de rayo, y se obtiene de mapas isoceráunicos o de densidad de descargas.'
+    explanation: 'Ng (densidad de descargas a tierra) es un parámetro clave para calcular la frecuencia esperada de impactos de rayo y evaluar la necesidad de pararrayos.'
   },
   {
     id: 'u8q38',
     unit: 8,
-    questionText: '¿Qué tipo de paneles fotovoltaicos suelen ofrecer un mejor rendimiento a altas temperaturas comparado con otros tipos de silicio cristalino?',
+    questionText: 'Paneles FV con mejor comportamiento a altas temperaturas (entre cristalinos):',
     options: [
       'Monocristalinos',
-      'Policristalinos (aunque la diferencia es pequeña, a veces se menciona una ligera ventaja)',
-      'Amorfos',
-      'Todos pierden eficiencia por igual.'
+      'Policristalinos (a veces)',
+      'Amorfos (mejor general)',
+      'Todos igual'
     ],
-    correctAnswerIndex: 1, // El texto original del PDF dice: "Con temperaturas elevadas, la perdida de eficiencia en módulos es policristalinos." lo cual es confuso y probablemente erróneo. Generalmente los amorfos o capa fina tienen mejor coeficiente de temperatura, pero entre los cristalinos, a veces se atribuye una ligera ventaja a los policristalinos o se considera similar. Dada la fuente, se elige esta.
-    explanation: 'El texto de la unidad menciona que con temperaturas elevadas, la pérdida de eficiencia en módulos policristalinos es un factor, aunque generalmente se considera que los paneles de capa fina (amorfos) tienen un mejor comportamiento térmico. Entre los cristalinos, las diferencias suelen ser menores.'
+    correctAnswerIndex: 1,
+    explanation: 'Aunque los amorfos suelen tener el mejor coeficiente de temperatura, entre los cristalinos, a veces se atribuye una ligera ventaja de comportamiento a altas temperaturas a los policristalinos, si bien las diferencias son pequeñas.'
   },
   {
     id: 'u8q39',
     unit: 8,
-    questionText: 'Una aplicación común de la domótica en el área de "seguridad" es:',
+    questionText: 'Aplicación común de domótica en "seguridad":',
     options: [
-      'El control automático de la temperatura ambiente.',
-      'La creación de escenas de iluminación personalizadas.',
-      'La detección de intrusión mediante sensores de movimiento y la activación de alarmas.',
-      'El riego automático del jardín.'
+      'Control temperatura',
+      'Escenas iluminación',
+      'Detección intrusión',
+      'Riego automático'
     ],
     correctAnswerIndex: 2,
-    explanation: 'La detección de intrusión, con sensores de movimiento o apertura de puertas/ventanas, y la activación de alarmas o avisos es una aplicación fundamental de la domótica para la seguridad patrimonial.'
+    explanation: 'La detección de intrusión mediante sensores de movimiento y la activación de alarmas es una aplicación fundamental de la domótica para la seguridad.'
   },
   {
     id: 'u8q40',
     unit: 8,
-    questionText: '¿Cuál es el propósito principal de los "contactos de seguridad" en un ascensor?',
+    questionText: 'Propósito principal de "contactos de seguridad" en ascensor:',
     options: [
-      'Permitir la comunicación con el exterior en caso de atrapamiento.',
-      'Encender la luz de la cabina automáticamente.',
-      'Asegurar que el ascensor solo funcione si todas las condiciones de seguridad se cumplen (ej. puertas cerradas).',
-      'Registrar el número de viajes realizados.'
+      'Comunicación exterior',
+      'Encender luz cabina',
+      'Asegurar operación segura',
+      'Registrar nº viajes'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Los contactos de seguridad (en puertas, paracaídas, limitador, etc.) están conectados en serie en el circuito de maniobra. Si alguno de ellos se abre debido a una condición insegura, el circuito se interrumpe e impide el movimiento del ascensor.'
+    explanation: 'Los contactos de seguridad aseguran que el ascensor solo funcione si todas las condiciones de seguridad (ej. puertas cerradas) se cumplen.'
   }
 ];
