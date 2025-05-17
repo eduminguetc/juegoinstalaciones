@@ -1,80 +1,80 @@
 // unit3_questions.js
-// Preguntas basadas en el resumen de la Unidad 3: Configuración de instalaciones de detección y extinción de incendios
+// Preguntas basadas en el resumen de la Unidad 3: Configuración de instalaciones de detección y extinción de incendios (Opciones Revisadas)
 export const unit3Questions = [
   {
     id: 'u3q1',
     unit: 3,
     questionText: '¿Qué es un "sector de incendio" según el CTE?',
     options: [
-      'El área donde es más probable que comience un incendio.',
-      'Un espacio de un edificio separado por elementos constructivos resistentes al fuego para confinar un incendio.',
-      'Un tipo de extintor específico para fuegos eléctricos.',
-      'La ruta de evacuación más corta hacia el exterior.'
+      'Zona de mayor riesgo',
+      'Espacio compartimentado',
+      'Tipo de extintor',
+      'Ruta de evacuación'
     ],
     correctAnswerIndex: 1,
-    explanation: 'Un sector de incendio es un espacio de un edificio separado de otras zonas por elementos constructivos delimitadores resistentes al fuego durante un período de tiempo determinado, con el fin de confinar o excluir el incendio.'
+    explanation: 'Un sector de incendio es un espacio de un edificio separado de otras zonas por elementos constructivos resistentes al fuego para confinar un incendio.'
   },
   {
     id: 'u3q2',
     unit: 3,
-    questionText: '¿Cuál es la función principal de un "vestíbulo de independencia"?',
+    questionText: 'Función principal de un "vestíbulo de independencia":',
     options: [
-      'Servir como zona de descanso para los bomberos.',
-      'Almacenar equipos de protección contra incendios.',
-      'Aportar una mayor garantía de compartimentación contra incendios entre dos o más recintos.',
-      'Ser el punto de inicio de todas las rutas de evacuación.'
+      'Zona descanso bomberos',
+      'Almacén de equipos PCI',
+      'Mejorar compartimentación',
+      'Inicio rutas evacuación'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Un vestíbulo de independencia es un espacio de uso exclusivo para la circulación situado entre dos o más recintos con la finalidad de aportar una mayor garantía de compartimentación contra incendios.'
+    explanation: 'Un vestíbulo de independencia es un espacio de circulación situado entre dos o más recintos para aportar una mayor garantía de compartimentación contra incendios.'
   },
   {
     id: 'u3q3',
     unit: 3,
-    questionText: 'La "carga de fuego" se define como:',
+    questionText: 'Definición de "carga de fuego":',
     options: [
-      'El peso de los equipos de extinción.',
-      'La temperatura máxima que alcanza un incendio.',
-      'La suma de las energías caloríficas liberadas en la combustión de todos los materiales combustibles en un espacio.',
-      'La velocidad de propagación del fuego.'
+      'Peso equipos extinción',
+      'Temperatura máx. incendio',
+      'Energía de combustibles',
+      'Velocidad propagación'
     ],
     correctAnswerIndex: 2,
-    explanation: 'La carga de fuego es la suma de las energías caloríficas liberadas en la combustión de todos los materiales combustibles existentes en un espacio.'
+    explanation: 'La carga de fuego es la suma de las energías caloríficas que liberarían todos los materiales combustibles existentes en un espacio si ardieran.'
   },
   {
     id: 'u3q4',
     unit: 3,
-    questionText: 'Para limitar la propagación exterior horizontal del incendio entre dos sectores, los puntos de sus fachadas que no sean al menos EI 60 deben estar separados una distancia "d". ¿De qué depende esta distancia "d"?',
+    questionText: 'Distancia "d" para limitar propagación horizontal entre sectores depende de:',
     options: [
-      'De la altura del edificio.',
-      'Del tipo de ocupantes del edificio.',
-      'Del ángulo formado por los planos exteriores de dichas fachadas.',
-      'Del material de la fachada exclusivamente.'
+      'Altura del edificio',
+      'Tipo de ocupantes',
+      'Ángulo entre fachadas',
+      'Material de fachada'
     ],
     correctAnswerIndex: 2,
-    explanation: 'La distancia "d" en proyección horizontal, para limitar la propagación exterior horizontal, depende del ángulo formado por los planos exteriores de las fachadas de los sectores de incendio.'
+    explanation: 'La distancia "d" para limitar la propagación exterior horizontal depende del ángulo formado por los planos exteriores de las fachadas de los sectores de incendio.'
   },
   {
     id: 'u3q5',
     unit: 3,
-    questionText: 'Según el CTE DB SI 3, ¿cómo se calcula la ocupación de una zona a efectos de evacuación?',
+    questionText: '¿Cómo se calcula la ocupación de una zona según CTE DB SI 3?',
     options: [
-      'Contando el número de sillas disponibles.',
-      'Aplicando valores de densidad de ocupación (personas/m² útil) según el uso de la zona.',
-      'Estimando un máximo de 2 personas por cada 10 m².',
-      'Sumando el número de puertas de salida.'
+      'Contando sillas',
+      'Aplicando densidades (pers/m²)',
+      'Estimando 2 pers/10m²',
+      'Sumando puertas salida'
     ],
     correctAnswerIndex: 1,
-    explanation: 'El cálculo de la ocupación se determina aplicando los valores de densidad de ocupación que se indican en la tabla 2.1 del DB SI 3, en función de la superficie útil de cada zona y su uso previsto.'
+    explanation: 'El cálculo de la ocupación se determina aplicando los valores de densidad de ocupación (personas/m² útil) según el uso de la zona (tabla 2.1 del DB SI 3).'
   },
   {
     id: 'u3q6',
     unit: 3,
-    questionText: '¿Qué tipo de señalización se debe utilizar en una salida prevista para uso exclusivo en caso de emergencia?',
+    questionText: 'Señalización para una salida de uso exclusivo en emergencia:',
     options: [
-      'Una flecha verde indicando la dirección.',
-      'El rótulo "SALIDA".',
-      'El rótulo "Salida de emergencia".',
-      'Un pictograma de una escalera.'
+      'Flecha verde',
+      'Rótulo "SALIDA"',
+      'Rótulo "Salida de emergencia"',
+      'Pictograma escalera'
     ],
     correctAnswerIndex: 2,
     explanation: 'Las señales "Salida de emergencia" deben ser visibles y utilizarse en toda salida prevista para uso exclusivo en caso de emergencia.'
@@ -82,7 +82,7 @@ export const unit3Questions = [
   {
     id: 'u3q7',
     unit: 3,
-    questionText: '¿Cuál es la anchura mínima libre que deben tener los viales de aproximación para los vehículos de bomberos según el CTE DB SI 5?',
+    questionText: 'Anchura mínima libre de viales de aproximación para bomberos:',
     options: [
       '2.5 metros',
       '3.0 metros',
@@ -95,194 +95,194 @@ export const unit3Questions = [
   {
     id: 'u3q8',
     unit: 3,
-    questionText: 'La resistencia al fuego de un elemento estructural se representa con la letra "R" seguida de un número. ¿Qué indica la "R"?',
+    questionText: 'La letra "R" en resistencia al fuego de estructuras indica:',
     options: [
-      'Resistencia a la Radiación.',
-      'Capacidad Portante (Estabilidad).',
-      'Reacción al fuego del material.',
-      'Rapidez de ignición.'
+      'Resistencia Radiación',
+      'Capacidad Portante',
+      'Reacción al fuego',
+      'Rapidez ignición'
     ],
     correctAnswerIndex: 1,
-    explanation: 'En la clasificación de resistencia al fuego, "R" indica la Capacidad Portante, es decir, la aptitud del elemento para soportar las cargas aplicadas sin perder su estabilidad estructural durante el tiempo especificado.'
+    explanation: '"R" indica la Capacidad Portante, la aptitud del elemento para soportar las cargas sin perder su estabilidad estructural durante el tiempo especificado.'
   },
   {
     id: 'u3q9',
     unit: 3,
     questionText: 'Una Boca de Incendio Equipada (BIE) es un elemento de:',
     options: [
-      'Detección de incendios.',
-      'Protección pasiva.',
-      'Extinción de incendios (protección activa).',
-      'Señalización de evacuación.'
+      'Detección incendios',
+      'Protección pasiva',
+      'Extinción (activa)',
+      'Señalización'
     ],
     correctAnswerIndex: 2,
-    explanation: 'La BIE es un conjunto de elementos necesarios para transportar y proyectar agua hasta el lugar del incendio, por lo tanto, es un equipo de extinción (protección activa).'
+    explanation: 'La BIE es un equipo de extinción (protección activa) que permite proyectar agua sobre el incendio.'
   },
   {
     id: 'u3q10',
     unit: 3,
-    questionText: '¿Cuál es la función principal de los "grupos de presión para incendios"?',
+    questionText: 'Función principal de los "grupos de presión para incendios":',
     options: [
-      'Detectar aumentos de presión en las tuberías.',
-      'Proporcionar el caudal y presión de agua necesarios para los sistemas de protección contra incendios.',
-      'Almacenar agua en aljibes.',
-      'Activar las alarmas sonoras en caso de incendio.'
+      'Detectar presión',
+      'Suministrar agua a presión',
+      'Almacenar agua',
+      'Activar alarmas'
     ],
     correctAnswerIndex: 1,
-    explanation: 'Los grupos de presión contra incendios son equipos encargados de proporcionar el caudal de agua necesario y en condiciones de presión exigentes para los sistemas de protección contra incendios (BIEs, hidrantes, rociadores).'
+    explanation: 'Los grupos de presión contra incendios proporcionan el caudal y presión de agua necesarios para los sistemas de protección (BIEs, hidrantes, rociadores).'
   },
   {
     id: 'u3q11',
     unit: 3,
-    questionText: 'Los detectores de humo fotoeléctricos e iónicos son parte de un sistema de:',
+    questionText: 'Detectores de humo fotoeléctricos e iónicos son parte de un sistema de:',
     options: [
-      'Extinción automática.',
-      'Ventilación de humos.',
-      'Detección de incendios.',
-      'Alumbrado de emergencia.'
+      'Extinción automática',
+      'Ventilación de humos',
+      'Detección de incendios',
+      'Alumbrado emergencia'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Los detectores de humo (fotoeléctricos, iónicos, etc.) son dispositivos que detectan la presencia de humo y emiten una señal, formando parte de un sistema de detección de incendios.'
+    explanation: 'Los detectores de humo son dispositivos que forman parte de un sistema de detección de incendios.'
   },
   {
     id: 'u3q12',
     unit: 3,
-    questionText: 'Un extintor portátil es un elemento de lucha contra incendios que se caracteriza por:',
+    questionText: 'Un extintor portátil se caracteriza por ser:',
     options: [
-      'Estar fijo en la pared y conectado a una red de agua.',
-      'Ser transportado y operado manualmente por una persona.',
-      'Activar automáticamente al detectar calor.',
-      'Contener únicamente CO2 como agente extintor.'
+      'Fijo y conectado a red',
+      'Transportado y operado manualmente',
+      'Automático al calor',
+      'Solo de CO2'
     ],
     correctAnswerIndex: 1,
-    explanation: 'El extintor portátil es un elemento manual de lucha contra incendios que es empleado por personas, pudiendo ser transportado con una mano o a la espalda (si pesa entre 20-30 kg).'
+    explanation: 'El extintor portátil es un elemento manual de lucha contra incendios que es transportado y operado por una persona.'
   },
   {
     id: 'u3q13',
     unit: 3,
-    questionText: '¿Qué función cumple la "central de incendio"?',
+    questionText: 'Función de la "central de incendio":',
     options: [
-      'Bombear agua a los rociadores.',
-      'Generar el agente extintor gaseoso.',
-      'Gestionar, mantener y comprobar los dispositivos del sistema de detección y/o extinción, y activar alarmas/actuaciones.',
-      'Suministrar energía eléctrica de emergencia a los sistemas.'
+      'Bombear agua',
+      'Generar agente extintor',
+      'Gestionar sistema detección/extinción',
+      'Suministrar energía'
     ],
     correctAnswerIndex: 2,
-    explanation: 'La central de incendio es un componente electrónico encargado de gestionar, mantener y comprobar diferentes dispositivos que forman parte de un sistema de detección y/o extinción, y permite distintas actuaciones ante alarmas o fallos.'
+    explanation: 'La central de incendio gestiona, mantiene y comprueba los dispositivos del sistema de detección y/o extinción, y activa alarmas/actuaciones.'
   },
   {
     id: 'u3q14',
     unit: 3,
     questionText: 'Los "rociadores automáticos" (sprinklers) se activan por:',
     options: [
-      'La detección de humo por un sensor óptico.',
-      'La rotura de un elemento termosensible debido a una temperatura elevada.',
-      'La pulsación manual de un botón de alarma.',
-      'Una señal enviada desde la central de bomberos.'
+      'Detección de humo',
+      'Rotura elemento termosensible',
+      'Pulsación manual',
+      'Señal de bomberos'
     ],
     correctAnswerIndex: 1,
-    explanation: 'Los rociadores automáticos tienen un elemento termosensible que se rompe a una determinada temperatura, liberando agua sobre el incendio de forma automática.'
+    explanation: 'Los rociadores automáticos tienen un elemento termosensible que se rompe a una determinada temperatura, liberando agua.'
   },
   {
     id: 'u3q15',
     unit: 3,
-    questionText: '¿Para qué se utilizan los "hidrantes exteriores"?',
+    questionText: 'Uso de los "hidrantes exteriores":',
     options: [
-      'Para que los ocupantes del edificio apaguen pequeños fuegos.',
-      'Para el riego de jardines en caso de sequía.',
-      'Para permitir a los bomberos la conexión de sus mangueras y obtener un gran caudal de agua.',
-      'Para llenar los aljibes de protección contra incendios.'
+      'Uso por ocupantes',
+      'Riego de jardines',
+      'Conexión bomberos',
+      'Llenar aljibes PCI'
     ],
     correctAnswerIndex: 2,
-    explanation: 'El hidrante está destinado a una ubicación exterior y su función es permitir la conexión de las mangueras y suministrar agua a los vehículos de bomberos.'
+    explanation: 'El hidrante exterior permite a los bomberos la conexión de sus mangueras para obtener un gran caudal de agua.'
   },
   {
     id: 'u3q16',
     unit: 3,
     questionText: 'Una "columna seca" es una instalación que:',
     options: [
-      'Contiene polvo químico extintor.',
-      'Está permanentemente llena de agua a presión.',
-      'Es una tubería vertical vacía con tomas para que los bomberos inyecten agua.',
-      'Sirve para la extracción de humos en caso de incendio.'
+      'Contiene polvo químico',
+      'Llena de agua a presión',
+      'Tubería vacía para bomberos',
+      'Para extracción de humos'
     ],
     correctAnswerIndex: 2,
-    explanation: 'El sistema de columna seca está formado por una tubería vacía con toma de agua en fachada (para los bomberos) y bocas de salida en las plantas, de uso exclusivo de los bomberos.'
+    explanation: 'La columna seca es una tubería vertical vacía con tomas para que los bomberos inyecten agua desde su camión.'
   },
   {
     id: 'u3q17',
     unit: 3,
     questionText: 'El Documento Básico SI 1 del CTE se enfoca en:',
     options: [
-      'La resistencia al fuego de la estructura.',
-      'La evacuación de los ocupantes.',
-      'La propagación interior del incendio y la compartimentación en sectores.',
-      'Las condiciones de intervención de los bomberos.'
+      'Resistencia estructura',
+      'Evacuación ocupantes',
+      'Propagación interior',
+      'Intervención bomberos'
     ],
     correctAnswerIndex: 2,
-    explanation: 'El DB SI 1 "Propagación interior" evidencia las exigencias que debe cumplir el interior del edificio para limitar el riesgo de propagación del incendio, incluyendo la compartimentación en sectores.'
+    explanation: 'El DB SI 1 "Propagación interior" se centra en limitar el riesgo de propagación del incendio dentro del edificio, incluyendo la compartimentación.'
   },
   {
     id: 'u3q18',
     unit: 3,
-    questionText: '¿Qué significa la clasificación EI 120 en un elemento constructivo?',
+    questionText: '¿Qué significa la clasificación EI 120 en un elemento?',
     options: [
-      'Que resiste 120 segundos al fuego.',
-      'Que tiene una capacidad portante (R) de 120 minutos.',
-      'Que mantiene su Integridad (E) y Aislamiento (I) térmico durante 120 minutos de exposición al fuego.',
-      'Que tiene una reacción al fuego clase E y una resistencia de 120 Pascales.'
+      'Resiste 120 segundos',
+      'Portante (R) 120 min',
+      'Integridad (E) y Aislamiento (I) por 120 min',
+      'Reacción E, resistencia 120 Pa'
     ],
     correctAnswerIndex: 2,
-    explanation: 'EI 120 indica que el elemento mantiene su Integridad (E - no paso de llamas ni gases calientes) y su Aislamiento térmico (I - limitación de temperatura en cara no expuesta) durante 120 minutos.'
+    explanation: 'EI 120 indica que el elemento mantiene su Integridad (E) y su Aislamiento térmico (I) durante 120 minutos de exposición al fuego.'
   },
   {
     id: 'u3q19',
     unit: 3,
-    questionText: 'Según el CTE, los locales y zonas de riesgo especial integrados en edificios se clasifican en grados de riesgo:',
+    questionText: 'Grados de riesgo para locales y zonas de riesgo especial:',
     options: [
-      'Mínimo, moderado y severo.',
-      'Tipo A, B y C.',
-      'Alto, medio y bajo.',
-      'Nivel 1, 2 y 3.'
+      'Mínimo, moderado, severo',
+      'Tipo A, B, C',
+      'Alto, medio, bajo',
+      'Nivel 1, 2, 3'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Los locales y zonas de riesgo especial integrados en los edificios son clasificados conforme a los grados de riesgo alto, medio y bajo, según el DB SI 1.'
+    explanation: 'Los locales y zonas de riesgo especial se clasifican en grados de riesgo alto, medio y bajo, según el DB SI 1.'
   },
   {
     id: 'u3q20',
     unit: 3,
-    questionText: 'El objetivo principal del DB SI "Seguridad en caso de incendio" del CTE es:',
+    questionText: 'Objetivo principal del DB SI "Seguridad en caso de incendio" del CTE:',
     options: [
-      'Garantizar que ningún edificio sufra un incendio.',
-      'Establecer las multas por incumplimiento de la normativa.',
-      'Reducir a límites aceptables el riesgo de que los usuarios sufran daños derivados de un incendio accidental.',
-      'Definir los tipos de mangueras a utilizar por los bomberos.'
+      'Evitar todo incendio',
+      'Establecer multas',
+      'Reducir riesgo daños a usuarios',
+      'Definir mangueras bomberos'
     ],
     correctAnswerIndex: 2,
-    explanation: 'El objetivo del DB SI es reducir a límites aceptables el riesgo de que los usuarios de un edificio sufran daños que derivan de un incendio de origen accidental, como consecuencia de las características de su proyecto, construcción, uso y mantenimiento.'
+    explanation: 'El objetivo del DB SI es reducir a límites aceptables el riesgo de que los usuarios de un edificio sufran daños derivados de un incendio accidental.'
   },
   {
     id: 'u3q21',
     unit: 3,
     questionText: '¿Qué es un "aljibe exclusivo para incendios"?',
     options: [
-      'Un tipo de camión de bomberos.',
-      'Un depósito de agua específico para asegurar la reserva necesaria para los sistemas de extinción.',
-      'Una boca de incendio especial para espumas.',
-      'Un sistema de detección temprana de incendios en depósitos.'
+      'Camión de bomberos',
+      'Depósito de agua para PCI',
+      'BIE para espumas',
+      'Detección en depósitos'
     ],
     correctAnswerIndex: 1,
-    explanation: 'Un aljibe exclusivo para incendios es un depósito de agua destinado únicamente a proveer la reserva necesaria para los sistemas de protección contra incendios del edificio.'
+    explanation: 'Un aljibe exclusivo para incendios es un depósito de agua destinado únicamente a proveer la reserva necesaria para los sistemas de protección contra incendios.'
   },
   {
     id: 'u3q22',
     unit: 3,
-    questionText: 'La norma UNE 23034:1988, mencionada en el DB SI 3, se refiere a:',
+    questionText: 'La norma UNE 23034:1988 se refiere a:',
     options: [
-      'El diseño de extintores portátiles.',
-      'La resistencia al fuego de puertas.',
-      'La señalización de seguridad para evacuación y equipos contra incendios.',
-      'El cálculo de la carga de fuego.'
+      'Diseño de extintores',
+      'Resistencia puertas',
+      'Señalización de seguridad',
+      'Cálculo carga de fuego'
     ],
     correctAnswerIndex: 2,
     explanation: 'La norma UNE 23034:1988 especifica las características de las señales de evacuación y de los equipos de protección contra incendios.'
@@ -290,12 +290,12 @@ export const unit3Questions = [
   {
     id: 'u3q23',
     unit: 3,
-    questionText: '¿Cuál es la altura mínima libre o gálibo que deben tener los viales de aproximación para bomberos?',
+    questionText: 'Altura mínima libre (gálibo) de viales de aproximación para bomberos:',
     options: [
-      '3.0 metros',
-      '3.5 metros',
-      '4.0 metros',
-      '4.5 metros'
+      '3.0 m',
+      '3.5 m',
+      '4.0 m',
+      '4.5 m'
     ],
     correctAnswerIndex: 3,
     explanation: 'Los viales de aproximación para los vehículos de bomberos deben tener una altura mínima libre o gálibo de 4.5 metros.'
@@ -303,90 +303,90 @@ export const unit3Questions = [
   {
     id: 'u3q24',
     unit: 3,
-    questionText: 'El RIPCI (Reglamento de Instalaciones de Protección contra Incendios) establece las condiciones para:',
+    questionText: 'El RIPCI establece condiciones para:',
     options: [
-      'El diseño estructural de edificios resistentes al fuego.',
-      'La evacuación de humos en aparcamientos.',
-      'El diseño, instalación, mantenimiento e inspección de los equipos y sistemas de protección activa contra incendios.',
-      'La formación del personal de emergencias.'
+      'Diseño estructural',
+      'Evacuación de humos',
+      'Equipos protección activa',
+      'Formación emergencias'
     ],
     correctAnswerIndex: 2,
-    explanation: 'El RIPCI establece las condiciones técnicas para el diseño, instalación, mantenimiento e inspección de los equipos y sistemas de protección activa contra incendios (extintores, BIEs, detectores, etc.).'
+    explanation: 'El RIPCI (Reglamento de Instalaciones de Protección contra Incendios) establece las condiciones técnicas para el diseño, instalación, mantenimiento e inspección de los equipos de protección activa.'
   },
   {
     id: 'u3q25',
     unit: 3,
-    questionText: '¿Qué se busca limitar con las exigencias de propagación exterior del DB SI 2?',
+    questionText: '¿Qué se busca limitar con las exigencias del DB SI 2 (Propagación Exterior)?',
     options: [
-      'El ruido generado por el incendio.',
-      'La propagación del fuego a través de fachadas y cubiertas, hacia otras partes del edificio o a edificios colindantes.',
-      'El acceso de curiosos a la zona del incendio.',
-      'La cantidad de agua utilizada por los bomberos.'
+      'Ruido del incendio',
+      'Fuego por fachadas/cubiertas',
+      'Acceso de curiosos',
+      'Agua usada por bomberos'
     ],
     correctAnswerIndex: 1,
-    explanation: 'El DB SI 2 establece condiciones para fachadas, medianeras y cubiertas para limitar la propagación del fuego por el exterior del edificio, tanto dentro del mismo como hacia otros edificios.'
+    explanation: 'El DB SI 2 establece condiciones para limitar la propagación del fuego por el exterior del edificio (fachadas, cubiertas), tanto dentro del mismo como hacia otros edificios.'
   },
   {
     id: 'u3q26',
     unit: 3,
-    questionText: 'Si un establecimiento de uso Comercial está integrado en un edificio de viviendas y su superficie construida es de 600 m², ¿debe constituir un sector de incendio diferenciado?',
+    questionText: 'Establecimiento Comercial de 600 m² en edificio de viviendas, ¿necesita sectorización?',
     options: [
-      'No, si el edificio principal es de viviendas.',
-      'Sí, porque supera los 500 m².',
-      'Solo si tiene riesgo especial alto.',
-      'No, nunca es necesario para uso comercial.'
+      'No, si es vivienda',
+      'Sí, > 500 m²',
+      'Solo si riesgo alto',
+      'No, nunca comercial'
     ],
     correctAnswerIndex: 1,
-    explanation: 'Generalmente, un establecimiento integrado en un edificio de otro uso principal debe constituir sector de incendio diferenciado si supera ciertos límites, como 500 m² para uso comercial.'
+    explanation: 'Un establecimiento integrado en un edificio de otro uso principal debe constituir sector de incendio diferenciado si supera ciertos límites, como 500 m² para uso comercial.'
   },
   {
     id: 'u3q27',
     unit: 3,
-    questionText: 'La altura de evacuación descendente máxima para que una planta pueda tener una única salida (cumpliendo otras condiciones) es de:',
+    questionText: 'Altura evacuación descendente máx. para planta con una única salida:',
     options: [
       '10 metros',
       '20 metros',
       '28 metros',
-      'No hay límite de altura si la ocupación es baja.'
+      'Sin límite con baja ocupación'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Una de las condiciones para que una planta o recinto disponga de una única salida es que la altura de evacuación descendente de la planta considerada no exceda de 28 metros (excepto en ciertos usos).'
+    explanation: 'Una condición para que una planta tenga una única salida es que la altura de evacuación descendente no exceda de 28 metros (salvo excepciones).'
   },
   {
     id: 'u3q28',
     unit: 3,
-    questionText: 'Un "vestíbulo de independencia" que da acceso a un local de riesgo especial alto:',
+    questionText: 'Vestíbulo de independencia a local de riesgo especial alto:',
     options: [
-      'Puede ser utilizado en los recorridos de evacuación de zonas habitables.',
-      'NO debe ser utilizado en los recorridos de evacuación de zonas habitables.',
-      'No necesita puertas resistentes al fuego.',
-      'Debe tener al menos 10 m² de superficie.'
+      'Puede usarse en evacuación',
+      'NO debe usarse en evacuación',
+      'No necesita puertas RF',
+      'Debe tener > 10 m²'
     ],
     correctAnswerIndex: 1,
-    explanation: 'Los vestíbulos que sean destinados a uno o a varios locales de riesgo especial, según lo establecido en el apartado 2 de la Sección SI 1, no deben ser utilizado en los recorridos de evacuación de zonas habitables.'
+    explanation: 'Los vestíbulos que dan a locales de riesgo especial (según SI 1) no deben ser utilizados en los recorridos de evacuación de zonas habitables.'
   },
   {
     id: 'u3q29',
     unit: 3,
-    questionText: '¿Cuál de los siguientes NO es un agente extintor comúnmente utilizado en sistemas de extinción automática?',
+    questionText: '¿Cuál NO es un agente extintor común en sistemas automáticos?',
     options: [
-      'Agua pulverizada o nebulizada',
+      'Agua pulverizada',
       'CO2',
       'Gasolina',
       'Polvo químico'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Los agentes extintores comunes incluyen agua, CO2, polvo químico, agentes limpios y agentes inertes. La gasolina es un combustible, no un agente extintor.'
+    explanation: 'Agentes extintores comunes son agua, CO2, polvo químico, etc. La gasolina es un combustible, no un agente extintor.'
   },
   {
     id: 'u3q30',
     unit: 3,
-    questionText: 'Para el cálculo de la ocupación, las "zonas de ocupación ocasional y accesibles únicamente a efectos de mantenimiento" (salas de máquinas, etc.) tienen una densidad de ocupación de:',
+    questionText: 'Densidad de ocupación para "zonas de mantenimiento ocasional":',
     options: [
-      '1 persona / 10 m²',
-      '0.5 personas / m²',
-      'Ocupación nula.',
-      'Depende del tamaño de la máquina.'
+      '1 pers / 10 m²',
+      '0.5 pers / m²',
+      'Ocupación nula',
+      'Depende máquina'
     ],
     correctAnswerIndex: 2,
     explanation: 'Según la tabla 2.1 del DB SI 3, las zonas de ocupación ocasional y accesibles únicamente a efectos de mantenimiento tienen asignada una ocupación nula.'
@@ -394,20 +394,20 @@ export const unit3Questions = [
   {
     id: 'u3q31',
     unit: 3,
-    questionText: 'La resistencia al fuego REI 60 de una cubierta significa que debe mantener su capacidad portante, integridad y aislamiento durante:',
+    questionText: 'REI 60 en una cubierta significa que mantiene sus propiedades durante:',
     options: [
       '60 segundos',
       '60 minutos',
       '6 horas',
-      'No tiene que ver con el tiempo.'
+      'Tiempo indefinido'
     ],
     correctAnswerIndex: 1,
-    explanation: 'REI 60 significa que la cubierta debe mantener su Capacidad Portante (R), Integridad (E) y Aislamiento (I) durante 60 minutos bajo condiciones de incendio normalizado.'
+    explanation: 'REI 60 significa que la cubierta debe mantener su Capacidad Portante (R), Integridad (E) y Aislamiento (I) durante 60 minutos.'
   },
   {
     id: 'u3q32',
     unit: 3,
-    questionText: '¿Qué tipo de protección contra incendios intenta minimizar la propagación y permitir la evacuación mediante el diseño y los materiales del edificio?',
+    questionText: 'Protección PCI que minimiza propagación mediante diseño y materiales:',
     options: [
       'Protección activa',
       'Protección reactiva',
@@ -415,51 +415,51 @@ export const unit3Questions = [
       'Protección dinámica'
     ],
     correctAnswerIndex: 2,
-    explanation: 'La protección pasiva se refiere a los materiales y equipos constructivos incorporados para evitar el colapso estructural, minimizar la propagación del incendio y permitir la evacuación.'
+    explanation: 'La protección pasiva se refiere a los materiales y elementos constructivos incorporados para minimizar la propagación del incendio y permitir la evacuación.'
   },
   {
     id: 'u3q33',
     unit: 3,
-    questionText: 'Si un edificio está equipado con columna seca, ¿a qué distancia máxima debe estar el acceso para un equipo de bombeo de bomberos?',
+    questionText: 'Distancia máxima de acceso a toma de columna seca para bomberos:',
     options: [
-      'Menos de 5 metros.',
-      'Menos de 10 metros.',
-      'Menos de 18 metros.',
-      'Menos de 30 metros.'
+      '< 5 metros',
+      '< 10 metros',
+      '< 18 metros',
+      '< 30 metros'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Si el edificio está equipado con columna seca, debe haber acceso para un equipo de bombeo de bomberos a menos de 18 metros de la conexión de la columna.'
+    explanation: 'Si el edificio tiene columna seca, debe haber acceso para un equipo de bombeo de bomberos a menos de 18 metros de la conexión.'
   },
   {
     id: 'u3q34',
     unit: 3,
-    questionText: 'Los ascensores de emergencia son una dotación de protección contra incendios que se exige en función de:',
+    questionText: 'Los ascensores de emergencia se exigen en función de:',
     options: [
-      'El color de la fachada del edificio.',
-      'El número de extintores instalados.',
-      'La altura de evacuación y el uso del edificio.',
-      'La proximidad a una estación de bomberos.'
+      'Color fachada',
+      'Nº de extintores',
+      'Altura y uso edificio',
+      'Proximidad bomberos'
     ],
     correctAnswerIndex: 2,
-    explanation: 'La exigencia de ascensores de emergencia, como otras instalaciones de protección, depende de factores como la altura de evacuación, el uso del edificio y su ocupación, según se establece en el CTE DB SI.'
+    explanation: 'La exigencia de ascensores de emergencia depende de factores como la altura de evacuación y el uso del edificio, según el CTE DB SI.'
   },
   {
     id: 'u3q35',
     unit: 3,
-    questionText: '¿Cuál es el propósito de las "zonas de refugio" mencionadas en la señalización de evacuación?',
+    questionText: 'Propósito de las "zonas de refugio" en evacuación:',
     options: [
-      'Almacenar material inflamable.',
-      'Servir como punto de encuentro exterior tras la evacuación.',
-      'Proporcionar un espacio seguro temporal dentro del edificio para personas con discapacidad que no pueden usar las escaleras.',
-      'Ser el lugar donde se ubica la central de incendios.'
+      'Almacén material',
+      'Punto encuentro exterior',
+      'Espacio seguro interior (PMR)',
+      'Ubicación central PCI'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Las zonas de refugio son espacios seguros dentro del edificio, compartimentados y protegidos, previstos para la evacuación de personas con discapacidad que no pueden utilizar las vías de evacuación habituales.'
+    explanation: 'Las zonas de refugio son espacios seguros temporales dentro del edificio para personas con discapacidad que no pueden usar las escaleras.'
   },
   {
     id: 'u3q36',
     unit: 3,
-    questionText: 'La capacidad portante del vial de aproximación de bomberos debe ser como mínimo de:',
+    questionText: 'Capacidad portante mínima del vial de aproximación de bomberos:',
     options: [
       '5 kN/m²',
       '10 kN/m²',
@@ -472,20 +472,20 @@ export const unit3Questions = [
   {
     id: 'u3q37',
     unit: 3,
-    questionText: 'En el dimensionado de elementos de evacuación, la anchura de una puerta (A) se calcula en función de:',
+    questionText: 'Anchura de una puerta de evacuación (A) se calcula según:',
     options: [
-      'La altura de la puerta.',
-      'El material de la puerta.',
-      'El número de personas (P) que deben pasar por ella.',
-      'El tipo de cerradura instalada.'
+      'Altura puerta',
+      'Material puerta',
+      'Nº personas (P)',
+      'Tipo cerradura'
     ],
     correctAnswerIndex: 2,
-    explanation: 'La anchura de las puertas y otros elementos de evacuación se dimensiona en función del número total de personas (P) cuyo paso está previsto por ese punto (ej. A ≥ P/200).'
+    explanation: 'La anchura de las puertas y otros elementos de evacuación se dimensiona en función del número total de personas (P) que deben pasar (ej. A ≥ P/200).'
   },
   {
     id: 'u3q38',
     unit: 3,
-    questionText: '¿Qué sección del CTE DB SI se ocupa de la "Resistencia al fuego de la estructura"?',
+    questionText: 'Sección del CTE DB SI sobre "Resistencia al fuego de la estructura":',
     options: [
       'SI 1',
       'SI 3',
@@ -493,32 +493,32 @@ export const unit3Questions = [
       'SI 6'
     ],
     correctAnswerIndex: 3,
-    explanation: 'La sección SI 6 del DB SI "Resistencia al fuego de la estructura" establece los métodos y requisitos para asegurar que la estructura mantenga su capacidad portante durante un incendio.'
+    explanation: 'La sección SI 6 del DB SI "Resistencia al fuego de la estructura" establece los requisitos para que la estructura mantenga su capacidad portante.'
   },
   {
     id: 'u3q39',
     unit: 3,
-    questionText: '¿Cuál de estas NO es una condición que deba cumplir un vestíbulo de independencia?',
+    questionText: '¿Cuál NO es condición de un vestíbulo de independencia?',
     options: [
-      'Las puertas de paso deben tener cierta resistencia al fuego.',
-      'Debe tener ventilación directa al exterior en todos los casos.',
-      'Debe permitir el giro de una silla de ruedas si es parte de un itinerario accesible.',
-      'No debe usarse en recorridos de evacuación de zonas habitables si da a un local de riesgo especial.'
+      'Puertas con RF',
+      'Ventilación directa siempre',
+      'Permitir giro silla ruedas',
+      'No en evacuación si da a riesgo'
     ],
     correctAnswerIndex: 1,
-    explanation: 'Un vestíbulo de independencia debe tener protección frente al humo si da a escaleras protegidas, pero no necesariamente ventilación directa al exterior en todos los casos; sus condiciones de ventilación/presurización dependen de a qué zonas conecte.'
+    explanation: 'Un vestíbulo de independencia debe tener protección frente al humo si da a escaleras protegidas, pero no necesariamente ventilación directa al exterior en todos los casos.'
   },
   {
     id: 'u3q40',
     unit: 3,
-    questionText: 'El alumbrado de emergencia es un tipo de instalación de protección contra incendios que se considera:',
+    questionText: 'El alumbrado de emergencia se considera una instalación de:',
     options: [
-      'Protección pasiva.',
-      'Un sistema de detección.',
-      'Un sistema de extinción.',
-      'Protección activa (aunque su función es facilitar la evacuación y seguridad).'
+      'Protección pasiva',
+      'Sistema detección',
+      'Sistema extinción',
+      'Protección activa'
     ],
     correctAnswerIndex: 3,
-    explanation: 'Aunque su función principal es facilitar la evacuación segura y la intervención, el alumbrado de emergencia es una instalación técnica que se activa en caso de fallo del suministro normal, por lo que se encuadra dentro de las medidas de protección activa.'
+    explanation: 'El alumbrado de emergencia es una instalación técnica que se activa en caso de fallo del suministro normal, por lo que se encuadra dentro de las medidas de protección activa.'
   }
 ];
