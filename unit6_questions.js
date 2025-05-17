@@ -1,335 +1,335 @@
 // unit6_questions.js
-// Preguntas basadas en el resumen de la Unidad 6: Configuración de instalaciones de climatización
+// Preguntas basadas en el resumen de la Unidad 6: Configuración de instalaciones de climatización (Opciones Revisadas)
 export const unit6Questions = [
   {
     id: 'u6q1',
     unit: 6,
-    questionText: '¿Qué se entiende por "climatización" según la definición del RITE?',
+    questionText: 'Definición de "climatización" según el RITE:',
     options: [
-      'Únicamente la instalación de calefacción en invierno.',
-      'Dotar a un espacio cerrado de las condiciones de temperatura, humedad, calidad del aire y, a veces, presión, para el bienestar o conservación.',
-      'El proceso de enfriar un edificio utilizando solo ventilación natural.',
-      'La medición de la temperatura exterior para predecir el clima.'
+      'Solo calefacción',
+      'Control ambiental completo',
+      'Solo ventilación natural',
+      'Medición temperatura ext.'
     ],
     correctAnswerIndex: 1,
-    explanation: 'Climatización es dar a un espacio cerrado las condiciones de temperatura, humedad relativa, calidad del aire y, a veces, también de presión, necesarias para el bienestar de las personas y/o la conservación de las cosas.'
+    explanation: 'Climatización es dotar a un espacio cerrado de las condiciones de temperatura, humedad, calidad del aire y, a veces, presión, para el bienestar o conservación.'
   },
   {
     id: 'u6q2',
     unit: 6,
-    questionText: '¿Cuál de estos factores influye MENOS directamente en el confort térmico humano?',
+    questionText: '¿Cuál NO influye directamente en el confort térmico humano?',
     options: [
-      'Temperatura del aire',
+      'Temperatura aire',
       'Humedad relativa',
-      'Velocidad del aire',
-      'El color de la pintura de las paredes'
+      'Velocidad aire',
+      'Color pintura paredes'
     ],
     correctAnswerIndex: 3,
-    explanation: 'El confort térmico depende directamente de factores como la temperatura, humedad, velocidad del aire, nivel de actividad, vestimenta y temperatura radiante. El color de las paredes influye indirectamente (absorción de luz/calor) pero no es un factor primario del confort humano.'
+    explanation: 'El confort térmico depende de temperatura, humedad, velocidad del aire, actividad, vestimenta y temperatura radiante. El color de paredes tiene un efecto indirecto.'
   },
   {
     id: 'u6q3',
     unit: 6,
-    questionText: 'La transferencia de calor por "radiación" se caracteriza por:',
+    questionText: 'Característica de la transferencia de calor por "radiación":',
     options: [
-      'Necesitar contacto directo entre los cuerpos.',
-      'Ocurrir únicamente en líquidos.',
-      'Transmitirse mediante ondas electromagnéticas, sin necesidad de medio material.',
-      'Requerir el movimiento de un fluido (aire o agua).'
+      'Necesita contacto',
+      'Solo en líquidos',
+      'Por ondas electromagnéticas',
+      'Requiere movimiento fluido'
     ],
     correctAnswerIndex: 2,
-    explanation: 'La radiación es la transferencia de calor mediante ondas electromagnéticas (infrarrojas, por ejemplo) y no necesita un medio material para propagarse (ej. el calor del Sol llega por radiación a través del vacío).'
+    explanation: 'La radiación se transmite mediante ondas electromagnéticas y no necesita un medio material para propagarse (ej. calor del Sol).'
   },
   {
     id: 'u6q4',
     unit: 6,
-    questionText: 'La "psicrometría" es el estudio de:',
+    questionText: 'La "psicrometría" es el estudio de las propiedades del:',
     options: [
-      'Las propiedades hidráulicas del agua.',
-      'La resistencia de los materiales al calor.',
-      'Las propiedades del aire húmedo (mezcla de aire seco y vapor de agua).',
-      'La velocidad del sonido en diferentes medios.'
+      'Agua en tuberías',
+      'Resistencia materiales',
+      'Aire húmedo',
+      'Velocidad del sonido'
     ],
     correctAnswerIndex: 2,
-    explanation: 'La psicrometría es el estudio de las propiedades físicas y térmicas del aire atmosférico, considerado como una mezcla de aire seco y vapor de agua.'
+    explanation: 'La psicrometría es la ciencia que estudia las propiedades físicas y térmicas del aire atmosférico (aire húmedo).'
   },
   {
     id: 'u6q5',
     unit: 6,
-    questionText: 'El "calor latente" está asociado a:',
+    questionText: 'El "calor latente" está asociado al cambio de:',
     options: [
-      'El cambio de temperatura del aire sin cambio de humedad.',
-      'La energía almacenada en los materiales de construcción.',
-      'La radiación solar directa.',
-      'El cambio de estado del agua (evaporación/condensación) en el aire, sin cambio de temperatura.'
+      'Temperatura sin humedad',
+      'Energía almacenada',
+      'Radiación solar',
+      'Estado del agua en aire'
     ],
     correctAnswerIndex: 3,
-    explanation: 'El calor latente es el calor asociado a un cambio de estado (en este caso, del vapor de agua en el aire) a temperatura constante.'
+    explanation: 'El calor latente es el calor asociado a un cambio de estado del agua (evaporación/condensación) en el aire, a temperatura constante.'
   },
   {
     id: 'u6q6',
     unit: 6,
     questionText: '¿Qué son las "cargas térmicas exteriores" en climatización?',
     options: [
-      'El calor generado por las personas y equipos dentro del edificio.',
-      'Las ganancias o pérdidas de calor debidas a la diferencia de temperatura con el exterior, la radiación solar y las infiltraciones.',
-      'El peso de los equipos de climatización instalados en el exterior.',
-      'La potencia eléctrica consumida por la unidad exterior.'
+      'Calor de personas/equipos',
+      'Ganancias/pérdidas por exterior',
+      'Peso equipos exteriores',
+      'Potencia eléctrica exterior'
     ],
     correctAnswerIndex: 1,
-    explanation: 'Las cargas térmicas exteriores se deben a las condiciones climáticas externas, como la transmisión de calor por cerramientos, la radiación solar a través de ventanas y las infiltraciones de aire exterior.'
+    explanation: 'Las cargas térmicas exteriores se deben a las condiciones climáticas externas: transmisión por cerramientos, radiación solar e infiltraciones.'
   },
   {
     id: 'u6q7',
     unit: 6,
-    questionText: 'En un sistema de climatización de "Expansión Directa" (DX), ¿qué fluido circula entre la unidad interior y exterior?',
+    questionText: 'Fluido que circula entre unidad interior y exterior en sistema DX:',
     options: [
-      'Agua fría o caliente.',
-      'Aire tratado.',
-      'Refrigerante.',
-      'Aceite térmico.'
+      'Agua fría/caliente',
+      'Aire tratado',
+      'Refrigerante',
+      'Aceite térmico'
     ],
     correctAnswerIndex: 2,
-    explanation: 'En los sistemas de Expansión Directa (DX), el fluido refrigerante circula por las tuberías que conectan la unidad interior (evaporador/condensador) y la unidad exterior (condensador/evaporador + compresor).'
+    explanation: 'En los sistemas de Expansión Directa (DX), el fluido refrigerante circula por las tuberías que conectan la unidad interior y la exterior.'
   },
   {
     id: 'u6q8',
     unit: 6,
-    questionText: 'Un sistema "Multi-Split" se caracteriza por:',
+    questionText: 'Un sistema "Multi-Split" se caracteriza por tener:',
     options: [
-      'Utilizar una única unidad interior muy potente.',
-      'Tener una unidad exterior que alimenta a varias unidades interiores.',
-      'Funcionar exclusivamente con energía solar.',
-      'Ser un sistema hidrónico (de agua).'
+      'Una interior potente',
+      'Una exterior, varias interiores',
+      'Funcionar solo con sol',
+      'Ser sistema hidrónico'
     ],
     correctAnswerIndex: 1,
-    explanation: 'Los sistemas Multi-Split (o multisistema) constan de una única unidad exterior conectada a varias (hasta 5 u 8) unidades interiores, permitiendo climatizar diferentes estancias con un solo equipo exterior.'
+    explanation: 'Los sistemas Multi-Split constan de una única unidad exterior conectada a varias unidades interiores.'
   },
   {
     id: 'u6q9',
     unit: 6,
     questionText: '¿Qué es un sistema VRF/VRV?',
     options: [
-      'Un tipo de aire acondicionado portátil.',
-      'Un sistema de calefacción por radiadores eléctricos.',
-      'Un sistema de Expansión Directa de gran capacidad con Volumen de Refrigerante Variable, para climatizar múltiples zonas de forma eficiente.',
-      'Un sistema de ventilación con recuperación de calor de alta eficiencia.'
+      'Aire acondicionado portátil',
+      'Calefacción eléctrica',
+      'Sistema DX gran capacidad',
+      'Ventilación alta eficiencia'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Los sistemas VRF/VRV (Volumen de Refrigerante Variable) son sistemas de expansión directa centralizados, que permiten conectar un gran número de unidades interiores a una sola unidad exterior, modulando el flujo de refrigerante a cada una para alta eficiencia y control zonal.'
+    explanation: 'Los sistemas VRF/VRV (Volumen de Refrigerante Variable) son sistemas de expansión directa centralizados de gran capacidad, para climatizar múltiples zonas.'
   },
   {
     id: 'u6q10',
     unit: 6,
-    questionText: 'En los sistemas de "Expansión Indirecta" o hidrónicos, ¿qué fluido se distribuye a las unidades terminales?',
+    questionText: 'Fluido distribuido a unidades terminales en sistemas hidrónicos:',
     options: [
-      'Refrigerante a alta presión.',
-      'Aire exterior sin tratar.',
-      'Agua (fría o caliente) enfriada/calentada por un equipo central.',
-      'Vapor de agua.'
+      'Refrigerante alta presión',
+      'Aire exterior sin tratar',
+      'Agua (fría o caliente)',
+      'Vapor de agua'
     ],
     correctAnswerIndex: 2,
-    explanation: 'En los sistemas de Expansión Indirecta (hidrónicos), un equipo central (enfriadora o bomba de calor) enfría o calienta agua, y este agua actúa como fluido caloportador que se distribuye por tuberías a las unidades terminales (fancoils, climatizadores, suelo radiante).'
+    explanation: 'En los sistemas hidrónicos (expansión indirecta), el agua (enfriada o calentada) actúa como fluido caloportador que se distribuye a las unidades terminales.'
   },
   {
     id: 'u6q11',
     unit: 6,
-    questionText: 'Un "Fancoil" o ventiloconvector es:',
+    questionText: 'Un "Fancoil" o ventiloconvector es una unidad terminal con:',
     options: [
-      'Un tipo de caldera de gas.',
-      'Un conducto de distribución de aire.',
-      'Una unidad terminal para sistemas de agua, que consta de batería (intercambiador) y ventilador.',
-      'Un filtro de aire de alta eficiencia.'
+      'Caldera de gas',
+      'Conducto de aire',
+      'Batería y ventilador',
+      'Filtro alta eficiencia'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Un Fancoil (ventiloconvector) es una unidad terminal utilizada en sistemas de climatización por agua. Contiene una batería donde el agua intercambia calor con el aire, y un ventilador que impulsa el aire tratado al local.'
+    explanation: 'Un Fancoil contiene una batería (intercambiador agua-aire) y un ventilador que impulsa el aire tratado al local.'
   },
   {
     id: 'u6q12',
     unit: 6,
-    questionText: 'El RITE (Reglamento de Instalaciones Térmicas en los Edificios) tiene como uno de sus objetivos principales:',
+    questionText: 'Uno de los objetivos principales del RITE es establecer exigencias de:',
     options: [
-      'Establecer los colores de las tuberías.',
-      'Regular únicamente el aislamiento térmico de los edificios.',
-      'Establecer exigencias de eficiencia energética y seguridad para las instalaciones de climatización, calefacción y ACS.',
-      'Fijar los precios de la energía.'
+      'Color de tuberías',
+      'Solo aislamiento térmico',
+      'Eficiencia y seguridad',
+      'Precios de energía'
     ],
     correctAnswerIndex: 2,
-    explanation: 'El RITE establece las exigencias de eficiencia energética, seguridad, bienestar térmico e higiene que deben cumplir las instalaciones térmicas (climatización, calefacción, ACS) en los edificios.'
+    explanation: 'El RITE (Reglamento de Instalaciones Térmicas en los Edificios) establece exigencias de eficiencia energética, seguridad, bienestar térmico e higiene.'
   },
   {
     id: 'u6q13',
     unit: 6,
-    questionText: '¿Qué función cumplen los "difusores" en un sistema de climatización por aire?',
+    questionText: 'Función de los "difusores" en climatización por aire:',
     options: [
-      'Filtrar el aire de retorno.',
-      'Generar frío o calor.',
-      'Introducir el aire tratado (impulsión) en el local de forma controlada y distribuida.',
-      'Regular la humedad del aire.'
+      'Filtrar aire retorno',
+      'Generar frío/calor',
+      'Distribuir aire impulsión',
+      'Regular humedad'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Los difusores son elementos terminales de impulsión (generalmente de techo) que distribuyen el aire tratado en el local, buscando una buena difusión sin generar corrientes molestas.'
+    explanation: 'Los difusores son elementos terminales de impulsión que distribuyen el aire tratado en el local de forma controlada.'
   },
   {
     id: 'u6q14',
     unit: 6,
-    questionText: 'En el ciclo de refrigeración por compresión, el "compresor" tiene la función de:',
+    questionText: 'Función del "compresor" en ciclo de refrigeración:',
     options: [
-      'Enfriar el refrigerante líquido.',
-      'Aumentar la presión y temperatura del refrigerante en estado gaseoso.',
-      'Expandir el refrigerante para bajar su temperatura.',
-      'Absorber calor del exterior.'
+      'Enfriar refrigerante',
+      'Aumentar P y T del gas',
+      'Expandir refrigerante',
+      'Absorber calor exterior'
     ],
     correctAnswerIndex: 1,
-    explanation: 'El compresor succiona el refrigerante gaseoso a baja presión del evaporador y lo comprime, elevando significativamente su presión y temperatura antes de enviarlo al condensador.'
+    explanation: 'El compresor succiona el refrigerante gaseoso a baja presión y lo comprime, elevando su presión y temperatura.'
   },
   {
     id: 'u6q15',
     unit: 6,
-    questionText: '¿Dónde cede calor el refrigerante al medio exterior en un ciclo de refrigeración?',
+    questionText: '¿Dónde cede calor el refrigerante al exterior en ciclo de refrigeración?',
     options: [
-      'En el evaporador.',
-      'En la válvula de expansión.',
-      'En el compresor.',
-      'En el condensador.'
+      'Evaporador',
+      'Válvula expansión',
+      'Compresor',
+      'Condensador'
     ],
     correctAnswerIndex: 3,
-    explanation: 'El condensador es el intercambiador de calor donde el refrigerante (a alta presión y temperatura) cede calor al medio exterior (aire o agua) y pasa de estado gaseoso a líquido.'
+    explanation: 'El condensador es donde el refrigerante (a alta presión y temperatura) cede calor al medio exterior y pasa de gas a líquido.'
   },
   {
     id: 'u6q16',
     unit: 6,
     questionText: 'Una "bomba de calor" es un equipo que puede:',
     options: [
-      'Solo generar frío.',
-      'Solo generar calor.',
-      'Proporcionar tanto frío como calor invirtiendo el ciclo de refrigeración.',
-      'Bombear agua caliente únicamente.'
+      'Solo generar frío',
+      'Solo generar calor',
+      'Dar frío y calor',
+      'Bombear solo agua'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Una bomba de calor es una máquina térmica que puede invertir su ciclo de funcionamiento para proporcionar tanto refrigeración (extrayendo calor del interior) como calefacción (extrayendo calor del exterior y cediéndolo al interior).'
+    explanation: 'Una bomba de calor puede invertir su ciclo de funcionamiento para proporcionar tanto refrigeración como calefacción.'
   },
   {
     id: 'u6q17',
     unit: 6,
     questionText: '¿Qué es el "punto de rocío"?',
     options: [
-      'La temperatura a la que hierve el agua a presión atmosférica.',
-      'La temperatura más baja que puede alcanzar el aire exterior.',
-      'La temperatura a la cual el aire se satura de vapor de agua (100% humedad relativa) y comienza a condensar.',
-      'El punto donde se mide la velocidad del aire en un conducto.'
+      'Temp. ebullición agua',
+      'Temp. mín. aire ext.',
+      'Temp. saturación aire',
+      'Punto medida velocidad'
     ],
     correctAnswerIndex: 2,
-    explanation: 'El punto de rocío es la temperatura a la que debe enfriarse una masa de aire, a presión constante, para que el vapor de agua que contiene comience a condensarse.'
+    explanation: 'El punto de rocío es la temperatura a la cual el aire se satura de vapor de agua (100% HR) y comienza a condensar.'
   },
   {
     id: 'u6q18',
     unit: 6,
     questionText: 'El Documento Básico HE 1 del CTE se enfoca en:',
     options: [
-      'El rendimiento de las calderas.',
-      'La limitación de la demanda energética del edificio a través de su envolvente térmica.',
-      'El uso de energías renovables.',
-      'La protección contra el ruido.'
+      'Rendimiento calderas',
+      'Limitar demanda energética',
+      'Uso energías renovables',
+      'Protección contra ruido'
     ],
     correctAnswerIndex: 1,
-    explanation: 'El DB HE 1 "Limitación de demanda energética" establece las exigencias sobre las características térmicas de la envolvente del edificio (aislamiento, puentes térmicos, control solar) para reducir sus necesidades de calefacción y refrigeración.'
+    explanation: 'El DB HE 1 "Limitación de demanda energética" establece exigencias sobre la envolvente térmica del edificio para reducir sus necesidades de climatización.'
   },
   {
     id: 'u6q19',
     unit: 6,
-    questionText: '¿Cuál de estos NO es un tipo común de unidad interior en sistemas Split o Multi-Split?',
+    questionText: '¿Cuál NO es un tipo común de unidad interior en sistemas Split?',
     options: [
       'Split de pared',
       'Cassette de techo',
-      'Conductos (oculto en falso techo)',
+      'Conductos',
       'Enfriadora de agua'
     ],
     correctAnswerIndex: 3,
-    explanation: 'Las unidades interiores comunes en sistemas de expansión directa (Split, Multi-Split, VRF) son las de pared, cassette, conductos, suelo/techo. Una enfriadora de agua es un equipo central de producción para sistemas hidrónicos (expansión indirecta).'
+    explanation: 'Una enfriadora de agua es un equipo central de producción para sistemas hidrónicos, no una unidad interior de un sistema Split de expansión directa.'
   },
   {
     id: 'u6q20',
     unit: 6,
     questionText: '¿Qué es una UTA (Unidad de Tratamiento de Aire)?',
     options: [
-      'Un termostato ambiente avanzado.',
-      'Un equipo compacto tipo Rooftop.',
-      'Un equipo modular que trata grandes volúmenes de aire (filtra, enfría/calienta, humecta/deshumecta, ventila).',
-      'Una válvula de control para sistemas VRF.'
+      'Termostato avanzado',
+      'Equipo Rooftop',
+      'Equipo modular trata aire',
+      'Válvula control VRF'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Una UTA o Climatizador es un equipo, generalmente modular, diseñado para tratar grandes caudales de aire, realizando funciones como filtrado, calentamiento, enfriamiento, humidificación, deshumidificación y mezcla con aire exterior.'
+    explanation: 'Una UTA o Climatizador es un equipo modular diseñado para tratar grandes caudales de aire (filtrar, enfriar/calentar, humectar/deshumectar, ventilar).'
   },
   {
     id: 'u6q21',
     unit: 6,
-    questionText: 'La velocidad del aire interior debe controlarse en climatización para:',
+    questionText: 'La velocidad del aire interior se controla para:',
     options: [
-      'Maximizar el ruido del sistema.',
-      'Asegurar que el aire llegue lo más rápido posible.',
-      'Evitar corrientes de aire molestas para los ocupantes.',
-      'Facilitar la condensación en las rejillas.'
+      'Maximizar ruido',
+      'Asegurar rapidez aire',
+      'Evitar corrientes molestas',
+      'Facilitar condensación'
     ],
     correctAnswerIndex: 2,
-    explanation: 'La velocidad del aire en la zona ocupada debe mantenerse baja (típicamente < 0.2 m/s) para evitar la sensación de corriente de aire, que puede causar disconfort térmico.'
+    explanation: 'La velocidad del aire en la zona ocupada debe mantenerse baja (típicamente < 0.2 m/s) para evitar la sensación de corriente de aire molesta.'
   },
   {
     id: 'u6q22',
     unit: 6,
-    questionText: '¿Cuál de estos es un ejemplo de "carga térmica interior" en verano?',
+    questionText: 'Ejemplo de "carga térmica interior" en verano:',
     options: [
-      'El calor que entra por una ventana cerrada debido a la diferencia de temperatura.',
-      'El calor generado por los ordenadores encendidos en una oficina.',
-      'El frío que entra por infiltraciones de aire.',
-      'La radiación solar que incide sobre la fachada opaca.'
+      'Calor por ventana cerrada',
+      'Calor de ordenadores',
+      'Frío por infiltraciones',
+      'Radiación solar fachada'
     ],
     correctAnswerIndex: 1,
-    explanation: 'Las cargas térmicas interiores son las ganancias de calor generadas dentro del propio espacio, como el calor desprendido por las personas, la iluminación y los equipos (ej. ordenadores).'
+    explanation: 'El calor generado por equipos internos como ordenadores es una carga térmica interior sensible.'
   },
   {
     id: 'u6q23',
     unit: 6,
-    questionText: 'Un sistema Rooftop es un equipo de climatización que se caracteriza por:',
+    questionText: 'Un sistema Rooftop se caracteriza por ser:',
     options: [
-      'Instalarse exclusivamente en el sótano.',
-      'Ser una unidad compacta "todo en uno" que se instala típicamente en la cubierta.',
-      'Utilizar agua como refrigerante.',
-      'Ser muy pequeño y portátil.'
+      'Instalado en sótano',
+      'Unidad compacta de cubierta',
+      'Usar agua refrigerante',
+      'Pequeño y portátil'
     ],
     correctAnswerIndex: 1,
-    explanation: 'Un sistema Rooftop es un equipo compacto autónomo aire-aire que incluye todos los componentes (compresor, evaporador, condensador, ventiladores, filtros, a veces quemador de gas) en una sola carcasa, diseñado para instalarse en el exterior, comúnmente en cubiertas.'
+    explanation: 'Un sistema Rooftop es un equipo compacto autónomo "todo en uno" que se instala típicamente en la cubierta del edificio.'
   },
   {
     id: 'u6q24',
     unit: 6,
-    questionText: 'Los conductos de distribución de aire en climatización pueden ser fabricados de:',
+    questionText: 'Materiales comunes para conductos de aire en climatización:',
     options: [
-      'Únicamente tubería de cobre.',
-      'Solo manguera flexible de plástico.',
-      'Chapa metálica, fibra de vidrio o materiales flexibles específicos.',
-      'Ladrillo refractario.'
+      'Solo tubería cobre',
+      'Solo manguera plástica',
+      'Chapa, fibra, flexibles',
+      'Ladrillo refractario'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Los conductos de aire se fabrican comúnmente de chapa de acero galvanizado, paneles rígidos de fibra de vidrio o materiales plásticos flexibles (para conexiones finales).'
+    explanation: 'Los conductos de aire se fabrican comúnmente de chapa metálica, paneles de fibra de vidrio o materiales plásticos flexibles.'
   },
   {
     id: 'u6q25',
     unit: 6,
-    questionText: '¿Qué función tienen los filtros en una Unidad de Tratamiento de Aire (UTA)?',
+    questionText: 'Función de los filtros en una UTA:',
     options: [
-      'Aumentar la humedad del aire.',
-      'Enfriar el aire por evaporación.',
-      'Retener partículas (polvo, polen, etc.) del aire para mejorar la calidad y proteger los equipos.',
-      'Regular el caudal de aire.'
+      'Aumentar humedad',
+      'Enfriar por evaporación',
+      'Retener partículas del aire',
+      'Regular caudal aire'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Los filtros son esenciales para retener partículas sólidas presentes en el aire, mejorando la calidad del aire interior y protegiendo los componentes del sistema (baterías, ventiladores) de la suciedad.'
+    explanation: 'Los filtros en una UTA son esenciales para retener partículas (polvo, polen) del aire, mejorando la calidad y protegiendo los equipos.'
   },
   {
     id: 'u6q26',
     unit: 6,
-    questionText: 'Un sistema de climatización hidrónico utiliza ______ como fluido caloportador.',
+    questionText: 'Un sistema hidrónico usa ______ como fluido caloportador.',
     options: [
       'Aire',
       'Refrigerante R-410A',
@@ -337,188 +337,188 @@ export const unit6Questions = [
       'Nitrógeno'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Los sistemas hidrónicos o de expansión indirecta utilizan agua (enfriada o calentada por un equipo central) como fluido caloportador para transportar la energía térmica a las unidades terminales.'
+    explanation: 'Los sistemas hidrónicos utilizan agua (enfriada o calentada) como fluido caloportador para transportar la energía térmica.'
   },
   {
     id: 'u6q27',
     unit: 6,
-    questionText: 'El "efecto Joule" en una instalación eléctrica (pérdida de energía en forma de calor en los cables) es una fuente de carga térmica:',
+    questionText: 'El calor disipado por cables eléctricos es una carga térmica:',
     options: [
-      'Exterior y latente.',
-      'Interior y latente.',
-      'Exterior y sensible.',
-      'Interior y sensible.'
+      'Exterior y latente',
+      'Interior y latente',
+      'Exterior y sensible',
+      'Interior y sensible'
     ],
     correctAnswerIndex: 3,
-    explanation: 'El calor disipado por los cables eléctricos y equipos (motores, iluminación) debido a su funcionamiento es una ganancia de calor interna y sensible (aumenta la temperatura del aire).'
+    explanation: 'El calor disipado por el funcionamiento de equipos eléctricos (efecto Joule en cables, motores, iluminación) es una ganancia de calor interna y sensible.'
   },
   {
     id: 'u6q28',
     unit: 6,
-    questionText: '¿Qué indica una alta "inercia térmica" en los cerramientos de un edificio?',
+    questionText: 'Alta "inercia térmica" en cerramientos significa que:',
     options: [
-      'Que el calor atraviesa los muros muy rápidamente.',
-      'Que los muros son muy ligeros y delgados.',
-      'Que los materiales tienen gran capacidad para almacenar calor y amortiguar las variaciones de temperatura.',
-      'Que el edificio está mal aislado.'
+      'Calor pasa rápido',
+      'Muros ligeros',
+      'Almacenan calor y amortiguan',
+      'Edificio mal aislado'
     ],
     correctAnswerIndex: 2,
-    explanation: 'La inercia térmica es la capacidad de los materiales para almacenar energía térmica. Una alta inercia ayuda a estabilizar la temperatura interior, retardando y amortiguando los efectos de las variaciones exteriores.'
+    explanation: 'Una alta inercia térmica indica que los materiales tienen gran capacidad para almacenar calor, lo que ayuda a amortiguar y retardar las variaciones de temperatura interior.'
   },
   {
     id: 'u6q29',
     unit: 6,
-    questionText: '¿Cuál es la función de la "válvula de expansión" en un ciclo de refrigeración?',
+    questionText: 'Función de la "válvula de expansión" en ciclo de refrigeración:',
     options: [
-      'Comprimir el refrigerante gaseoso.',
-      'Condensar el refrigerante cediendo calor.',
-      'Reducir bruscamente la presión y temperatura del refrigerante líquido antes del evaporador.',
-      'Permitir el paso del refrigerante solo en una dirección.'
+      'Comprimir refrigerante',
+      'Condensar refrigerante',
+      'Reducir P y T del líquido',
+      'Permitir flujo unidireccional'
     ],
     correctAnswerIndex: 2,
-    explanation: 'La válvula de expansión produce una caída brusca de presión en el refrigerante líquido que viene del condensador, lo que provoca una bajada de su temperatura y lo prepara para evaporarse absorbiendo calor en el evaporador.'
+    explanation: 'La válvula de expansión reduce bruscamente la presión y temperatura del refrigerante líquido antes de que entre al evaporador.'
   },
   {
     id: 'u6q30',
     unit: 6,
-    questionText: 'Los refrigerantes HFC (Hidrofluorocarbonos), aunque no dañan la capa de ozono, presentan el inconveniente de:',
+    questionText: 'Inconveniente de los refrigerantes HFC (Hidrofluorocarbonos):',
     options: [
-      'Ser altamente tóxicos.',
-      'Ser muy inflamables.',
-      'Tener un alto Potencial de Calentamiento Atmosférico (PCA/GWP).',
-      'Ser extremadamente caros e ineficientes.'
+      'Muy tóxicos',
+      'Muy inflamables',
+      'Alto PCA/GWP',
+      'Caros e ineficientes'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Los refrigerantes HFC sustituyeron a los CFC/HCFC porque no dañan la capa de ozono, pero contribuyen significativamente al efecto invernadero debido a su alto Potencial de Calentamiento Atmosférico (PCA o GWP).'
+    explanation: 'Los refrigerantes HFC, aunque no dañan la capa de ozono, tienen un alto Potencial de Calentamiento Atmosférico (PCA o GWP), contribuyendo al efecto invernadero.'
   },
   {
     id: 'u6q31',
     unit: 6,
-    questionText: 'En la fórmula simplificada de transmisión de calor Q = U · A · ΔT, ¿qué representa "U"?',
+    questionText: 'En Q = U · A · ΔT, ¿qué representa "U"?',
     options: [
-      'La diferencia de temperatura.',
-      'El área de transferencia.',
-      'El coeficiente global de transferencia de calor del elemento.',
-      'El flujo de calor total.'
+      'Diferencia temperatura',
+      'Área de transferencia',
+      'Coeficiente transferencia',
+      'Flujo de calor total'
     ],
     correctAnswerIndex: 2,
-    explanation: 'U representa el coeficiente global de transferencia de calor (o transmitancia térmica), que mide la facilidad con la que el calor atraviesa un elemento constructivo por unidad de área y diferencia de temperatura (W/m²K).'
+    explanation: 'U representa el coeficiente global de transferencia de calor (o transmitancia térmica) del elemento (W/m²K).'
   },
   {
     id: 'u6q32',
     unit: 6,
-    questionText: '¿Qué tipo de sistema de climatización sería más adecuado para un gran edificio de oficinas con necesidad de control individual por despacho?',
+    questionText: 'Sistema de climatización para gran edificio de oficinas con control individual:',
     options: [
-      'Un split 1x1 de pared.',
-      'Varios equipos portátiles.',
-      'Un sistema VRF/VRV o un sistema hidrónico con fancoils.',
-      'Un sistema de calefacción por radiadores eléctricos únicamente.'
+      'Split 1x1 pared',
+      'Varios portátiles',
+      'VRF o hidrónico fancoils',
+      'Solo radiadores eléctricos'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Para grandes edificios con múltiples zonas y necesidad de control individual y eficiencia, los sistemas VRF/VRV (expansión directa) o los sistemas hidrónicos con fancoils (expansión indirecta) son las soluciones más adecuadas.'
+    explanation: 'Para grandes edificios con múltiples zonas y necesidad de control individual, los sistemas VRF/VRV o los sistemas hidrónicos con fancoils son soluciones adecuadas.'
   },
   {
     id: 'u6q33',
     unit: 6,
-    questionText: 'Los "Dampers" o compuertas de regulación en conductos de aire sirven para:',
+    questionText: '"Dampers" o compuertas en conductos de aire sirven para:',
     options: [
-      'Filtrar el aire.',
-      'Reducir el ruido del ventilador.',
-      'Ajustar o cerrar el paso del caudal de aire.',
-      'Medir la temperatura del aire.'
+      'Filtrar el aire',
+      'Reducir ruido ventilador',
+      'Ajustar o cerrar caudal',
+      'Medir temperatura aire'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Los dampers son compuertas móviles instaladas en los conductos o rejillas que permiten regular el volumen de aire que pasa por ellos, equilibrando la instalación o cerrando el flujo.'
+    explanation: 'Los dampers son compuertas móviles que permiten regular (ajustar o cerrar) el caudal de aire que pasa por un conducto o rejilla.'
   },
   {
     id: 'u6q34',
     unit: 6,
-    questionText: '¿Cuál es el rango de humedad relativa generalmente aceptado para el confort térmico según el RITE?',
+    questionText: 'Rango de humedad relativa para confort térmico según RITE:',
     options: [
       '0% - 20%',
       '20% - 40%',
-      '40% - 60% (o 45-60% en verano / 40-50% en invierno)',
+      '40% - 60%',
       '80% - 100%'
     ],
     correctAnswerIndex: 2,
-    explanation: 'El RITE establece rangos de humedad relativa operativa para confort, que suelen estar entre el 40% y el 60% (más específicamente, 45-60% en verano y 40-50% en invierno según método simplificado).'
+    explanation: 'El RITE establece rangos de humedad relativa para confort, que suelen estar entre el 40% y el 60% (ej. 45-60% verano / 40-50% invierno).'
   },
   {
     id: 'u6q35',
     unit: 6,
-    questionText: 'La "cámara de mezcla" en una UTA permite:',
+    questionText: 'La "cámara de mezcla" en una UTA permite mezclar:',
     options: [
-      'Mezclar diferentes tipos de refrigerantes.',
-      'Mezclar el aire de retorno del local con aire exterior antes de tratarlo.',
-      'Aumentar la presión del aire de impulsión.',
-      'Enfriar el aire mediante la mezcla con agua pulverizada.'
+      'Tipos de refrigerantes',
+      'Aire de retorno y exterior',
+      'Aumentar presión aire',
+      'Enfriar con agua pulverizada'
     ],
     correctAnswerIndex: 1,
-    explanation: 'La cámara de mezcla es una sección de la Unidad de Tratamiento de Aire (UTA) donde se controla la proporción de aire de retorno del local y aire fresco exterior que se mezclan antes de pasar por las etapas de tratamiento (filtros, baterías).'
+    explanation: 'La cámara de mezcla en una UTA es donde se mezcla el aire de retorno del local con aire fresco exterior antes de ser tratado.'
   },
   {
     id: 'u6q36',
     unit: 6,
-    questionText: '¿Qué ventaja presenta un sistema "Aire-Agua" frente a un "Agua-Agua" en enfriadoras o bombas de calor?',
+    questionText: 'Ventaja de sistema "Aire-Agua" vs "Agua-Agua" en enfriadoras:',
     options: [
-      'Es siempre más eficiente energéticamente.',
-      'No necesita una torre de refrigeración o circuito de agua externo para disipar/captar calor.',
-      'Puede funcionar a temperaturas más extremas.',
-      'Es mucho más silencioso.'
+      'Siempre más eficiente',
+      'No necesita torre externa',
+      'Funciona a temp. extremas',
+      'Mucho más silencioso'
     ],
     correctAnswerIndex: 1,
-    explanation: 'Los sistemas Aire-Agua intercambian calor directamente con el aire ambiente exterior a través de baterías aleteadas y ventiladores, eliminando la necesidad de un circuito secundario de agua con torres de refrigeración, sondeos geotérmicos, etc., que sí requieren los sistemas Agua-Agua.'
+    explanation: 'Los sistemas Aire-Agua intercambian calor con el aire ambiente exterior, eliminando la necesidad de un circuito secundario de agua con torres de refrigeración que sí requieren los sistemas Agua-Agua.'
   },
   {
     id: 'u6q37',
     unit: 6,
-    questionText: '¿Cuál de estos elementos es fundamental para el funcionamiento de una bomba de calor en modo calefacción cuando la temperatura exterior es baja?',
+    questionText: 'Elemento clave en bomba de calor (modo calor) a baja temp. exterior:',
     options: [
-      'El evaporador (unidad exterior), que absorbe calor del aire frío exterior.',
-      'El condensador (unidad interior), que absorbe calor del interior.',
-      'Un quemador de gas auxiliar.',
-      'Un depósito de agua caliente adicional.'
+      'Evaporador (unidad ext.)',
+      'Condensador (unidad int.)',
+      'Quemador gas auxiliar',
+      'Depósito agua caliente'
     ],
     correctAnswerIndex: 0,
-    explanation: 'En modo calefacción, la bomba de calor invierte el ciclo: el evaporador (unidad exterior) extrae calor del aire exterior (incluso si está frío, ya que contiene energía térmica por encima del cero absoluto) y el condensador (unidad interior) cede ese calor al interior.'
+    explanation: 'En modo calefacción, el evaporador (unidad exterior) de una bomba de calor absorbe calor del aire exterior, incluso si está frío.'
   },
   {
     id: 'u6q38',
     unit: 6,
-    questionText: 'La UNE-EN ISO 7730 es una norma relevante para:',
+    questionText: 'La norma UNE-EN ISO 7730 es relevante para:',
     options: [
-      'El cálculo de cargas térmicas.',
-      'La clasificación de filtros de aire.',
-      'La ergonomía del ambiente térmico y la determinación del confort (índices PMV y PPD).',
-      'El diseño de conductos de aire.'
+      'Cálculo cargas térmicas',
+      'Clasificación filtros',
+      'Ergonomía ambiente térmico',
+      'Diseño conductos aire'
     ],
     correctAnswerIndex: 2,
-    explanation: 'La norma UNE-EN ISO 7730 trata sobre la ergonomía del ambiente térmico y proporciona métodos para predecir la sensación térmica general y el grado de insatisfacción (índices PMV y PPD) de las personas expuestas a ambientes térmicos moderados.'
+    explanation: 'La UNE-EN ISO 7730 trata sobre la ergonomía del ambiente térmico y métodos para predecir la sensación térmica general (confort).'
   },
   {
     id: 'u6q39',
     unit: 6,
-    questionText: '¿Qué se busca minimizar al seleccionar un fluido refrigerante en la actualidad, además de la eficiencia?',
+    questionText: 'Al seleccionar refrigerantes, se busca minimizar, además de eficiencia:',
     options: [
-      'Su capacidad para absorber calor.',
-      'Su temperatura de ebullición.',
-      'Su impacto ambiental (Potencial de Agotamiento de Ozono - PAO y Potencial de Calentamiento Atmosférico - PCA).',
-      'Su densidad en estado líquido.'
+      'Capacidad absorber calor',
+      'Temperatura ebullición',
+      'Impacto ambiental (PAO/PCA)',
+      'Densidad en estado líquido'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Debido a la normativa ambiental, la selección de refrigerantes busca minimizar su impacto, prefiriendo aquellos con bajo o nulo PAO (ODP) y bajo PCA (GWP).'
+    explanation: 'Actualmente se busca minimizar el impacto ambiental de los refrigerantes, prefiriendo aquellos con bajo Potencial de Agotamiento de Ozono (PAO) y bajo Potencial de Calentamiento Atmosférico (PCA).'
   },
   {
     id: 'u6q40',
     unit: 6,
-    questionText: '¿Qué tipo de calor generan principalmente las personas en un ambiente?',
+    questionText: 'Tipo de calor que generan principalmente las personas:',
     options: [
-      'Solo calor sensible (aumento de temperatura del aire).',
-      'Solo calor latente (vapor de agua por respiración/sudoración).',
-      'Tanto calor sensible como calor latente.',
-      'Ningún tipo de calor relevante para la climatización.'
+      'Solo sensible',
+      'Solo latente',
+      'Sensible y latente',
+      'Ninguno relevante'
     ],
     correctAnswerIndex: 2,
-    explanation: 'Las personas generan tanto calor sensible (por su metabolismo y convección/radiación) como calor latente (por la evaporación del sudor y la humedad de la respiración), ambos deben ser considerados en el cálculo de cargas térmicas.'
+    explanation: 'Las personas generan tanto calor sensible (aumento de temperatura del aire) como calor latente (vapor de agua por respiración y sudoración).'
   }
 ];
